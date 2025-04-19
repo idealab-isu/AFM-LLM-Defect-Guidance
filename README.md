@@ -4,7 +4,8 @@
 
 # TODO
 
-- [ ] Evaluate RAG vs non-RAG responses
-  - [ ] Find evaluation metrics for RAG vs non-RAG responses
-- [ ] Find the answer: Is Reasoning model with document better without fine-tuning LLM? (Clarify with Dr.Soumik)
+- [ ] Generate 50 detailed questions related to AFM image defects focusing on multiple sample types, scanning parameters, and defect types.
+- [ ] Generate answers using GPT-40, Claude, Grok, and Gemini.
+- [ ] Generate answers using reasoning models.
+- [ ] Get evaluateions from AFM experts for the answers.
 - [ ] Work on UI for AFM agent
