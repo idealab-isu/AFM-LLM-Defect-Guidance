@@ -12,8 +12,8 @@ ANTHROPIC_API_KEY = "YOUR_ANTHROPIC_API_KEY"
 GOOGLE_API_KEY = "YOUR_GEMINI_API_KEY"
 
 # Initialize models
-#gpt4o = ChatOpenAI(model_name="gpt-4o", openai_api_key=OPENAI_API_KEY)
-#claude3 = ChatAnthropic(model="claude-3-opus-20240229", anthropic_api_key=ANTHROPIC_API_KEY)
+gpt4o = ChatOpenAI(model_name="gpt-4o", openai_api_key=OPENAI_API_KEY)
+claude3 = ChatAnthropic(model="claude-3-opus-20240229", anthropic_api_key=ANTHROPIC_API_KEY)
 gemini = ChatGoogleGenerativeAI(model="gemini-2.0-flash", google_api_key=GOOGLE_API_KEY)
 
 # Expert system prompt
