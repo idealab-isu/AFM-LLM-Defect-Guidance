@@ -52,8 +52,8 @@ def main(model_name):
     #             scanning parameters, biological samples, and tip contamination. Keep responses concise and technical.")
 
     system_prompt = SystemMessage(
-        content="You are an expert in atomic force microscopy (AFM). You are given a type of defect in AFM image.\
-                You need to help the user understand the defect and how to avoid it. Give concise but correct answer for the user questions.\
+        content="You are an expert in atomic force microscopy (AFM). You are given a type of defect (Tip Contamination or Not Tracking) in AFM image.\
+                You need to help the user understand the defect and how to avoid it. Give concise and correct answer for the user questions.\
                 ")
                 #I have compiled the questions from AFM users and I want you to answer them.        
 
@@ -84,9 +84,9 @@ def main(model_name):
             "Answer": model_resp
         })
 
-    # Convert to DataFrame and export
-    df = pd.DataFrame(results)
-    df.to_csv(f"afm_model_comparison_{model_name}.csv", index=False)
+    # Export to JSON instead of CSV
+    with open(f"afm_model_comparison_{model_name}.json", 'w') as f:
+        json.dump(results, f, indent=4)
 
 
 if __name__ == "__main__":
