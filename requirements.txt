@@ -20,3 +20,6 @@ PyPDF2
 
 # Optional: for improved dev type checking
 typing-extensions
+
+# Environment variables
+python-dotenv
