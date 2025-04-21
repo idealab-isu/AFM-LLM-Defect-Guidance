@@ -1,0 +1,152 @@
+[
+    {
+        "question": "I'm imaging soft polymer films, and over time the contrast gets worse-how can I tell if the tip is contaminated, and what precautions can I take during scanning to prevent this?"
+    },
+    {
+        "question": "After scanning biological samples in fluid, the tip seems degraded-how can I reduce the chance of biofouling or sample transfer to the tip?"
+    },
+    {
+        "question": "What scanning parameters can I tune to reduce the risk of tip contamination when imaging adhesive surfaces like hydrogels or organic thin films?"
+    },
+    {
+        "question": "How can I determine if a drop in resolution is due to tip wear vs tip contamination, and what are the cleaning or replacement protocols?"
+    },
+    {
+        "question": "Can certain material types or surface treatments increase the likelihood of contaminating the tip? How can I prepare my sample differently to avoid that?"
+    },
+    {
+        "question": "I'm working with live cell cultures, and the tip seems to get contaminated during extended imaging-how can I minimize biological debris sticking to the tip?"
+    },
+    {
+        "question": "After scanning hydrated tissue sections, I see ghost features and blurred edges-what kind of tip care or material compatibility checks should I perform to prevent this?"
+    },
+    {
+        "question": "How do I choose tip material and coating to reduce contamination when imaging sticky biomolecules like DNA or unfolded proteins?"
+    },
+    {
+        "question": "I-m imaging fibrous extracellular matrix proteins, and resolution decreases with each scan-how can I prevent material buildup on the tip during repeated passes?"
+    },
+    {
+        "question": "When imaging soft protein layers in fluid, I notice a rapid drop in resolution-could this be due to tip contamination, and how can I reduce fouling during long scans?"
+    },
+    {
+        "question": "I'm imaging a lipid bilayer in fluid and notice fuzzy edges after a few scans-how can I reduce molecular transfer to the tip?"
+    },
+    {
+        "question": "What role does relative humidity play in promoting tip contamination while scanning hygroscopic samples like polysaccharides?"
+    },
+    {
+        "question": "I frequently switch between dry and fluid imaging sessions-how should I clean or condition the tip between sessions to prevent cross-contamination?"
+    },
+    {
+        "question": "How can I detect early signs of organic contamination on the tip before they significantly affect resolution?"
+    },
+    {
+        "question": "I'm working with hydrophobic surfaces-how does tip hydrophilicity impact contamination risk, and how should I choose the tip coating?"
+    },
+    {
+        "question": "Are there best practices for storing AFM tips to reduce contamination risk before imaging sensitive protein samples?"
+    },
+    {
+        "question": "Can using a closed fluid cell reduce contamination while imaging weakly bound soft matter in aqueous conditions?"
+    },
+    {
+        "question": "What are the recommended low-force settings to minimize tip embedding and contamination in soft hydrogel networks?"
+    },
+    {
+        "question": "How do I distinguish between phase image artifacts from surface features and those due to tip contamination?"
+    },
+    {
+        "question": "Is there a recommended plasma or UV-ozone cleaning protocol for restoring contaminated tips used in biological samples?"
+    },
+    {
+        "question": "When imaging samples functionalized with charged ligands, how does electrostatic interaction contribute to tip fouling, and how can I mitigate it?"
+    },
+    {
+        "question": "What rinsing steps should be followed when transferring protein-coated mica samples to the AFM to reduce tip fouling?"
+    },
+    {
+        "question": "For imaging high-resolution DNA origami structures, how often should I check for tip contamination and recalibrate?"
+    },
+    {
+        "question": "I observe gradual contrast loss across sequential tiles in a stitched image-could progressive tip contamination be the cause, and how can I validate this?"
+    },
+    {
+        "question": "What's the safest way to clean a tip in-situ during a long imaging session without fully retracting it or disturbing the fluid environment?"
+    },
+    {
+        "question": "I'm imaging a hard metallic surface and I notice the tip is skipping over topography-what feedback loop settings or scan parameters should I modify?"
+    },
+    {
+        "question": "Why does my AFM lose contact with the sample while scanning a soft material in tapping mode, and how can I maintain good tracking without damaging the surface?"
+    },
+    {
+        "question": "I see flat lines in my topography image that suggest tracking failure-what environmental or scanner factors could be contributing to this, and how do I address them?"
+    },
+    {
+        "question": "How does the scan speed or line rate affect the ability of the tip to track rough features, and what's the best strategy for balancing speed and stability?"
+    },
+    {
+        "question": "When I zoom into nanostructures on my sample, the AFM fails to follow sharp edges-what tip and mode settings improve tracking on high-aspect-ratio features?"
+    },
+    {
+        "question": "While imaging soft live cells in tapping mode, I see sudden height drops and tracking loss-how can I tune feedback parameters to avoid indentation or disengagement?"
+    },
+    {
+        "question": "I observe periodic loss of tracking on collagen-coated tissue samples-could this be due to topographical steepness, and how should I adjust my scan parameters?"
+    },
+    {
+        "question": "When zooming into nanometer-scale protein aggregates, my AFM fails to follow sharp topography-what tip specs and scanning parameters can ensure accurate tracking?"
+    },
+    {
+        "question": "I-m imaging hydrated cells on soft substrates, and feedback seems unstable-how does substrate compliance affect tracking, and what imaging mode would be more stable?"
+    },
+    {
+        "question": "During imaging of biofilms, the feedback loop can-t keep up with surface changes-how can I improve the tracking without increasing damage to the biological sample?"
+    },
+    {
+        "question": "While scanning porous scaffolds, the feedback loop fails near void edges-how can I improve tracking over these abrupt depth changes?"
+    },
+    {
+        "question": "On rough mineral surfaces, I experience repeated line skip artifacts-how should I adjust Z-piezo gain and PID parameters?"
+    },
+    {
+        "question": "How can cantilever spring constant affect tracking stability when imaging stiff samples in intermittent contact mode?"
+    },
+    {
+        "question": "What imaging mode is best suited for tracking sharp nanoparticle clusters on a soft biological matrix?"
+    },
+    {
+        "question": "What are signs of scanner creep leading to tracking issues during long-term imaging of patterned substrates?"
+    },
+    {
+        "question": "I notice tracking failure only during upward topography changes-what scan direction or phase settings should I revise?"
+    },
+    {
+        "question": "What precautions should I take when switching from low-viscosity to high-viscosity fluid imaging environments to prevent tracking instability?"
+    },
+    {
+        "question": "During high-magnification scans of fibrillar proteins, feedback becomes noisy-how can I enhance tip-sample coupling without increasing normal force?"
+    },
+    {
+        "question": "My sample is mounted at a slight tilt-how can uneven loading lead to lateral tip displacement and tracking defects?"
+    },
+    {
+        "question": "When imaging a cross-section of a multilayer film, the AFM fails to track abrupt material transitions-what scan angle or force setpoint strategies can help?"
+    },
+    {
+        "question": "What is the effect of scanner thermal drift on long, slow scans, and how can I compensate for it to maintain tracking?"
+    },
+    {
+        "question": "I'm scanning live cells under a perfusion system-how do flow-induced vibrations impact tracking, and how can I stabilize the setup?"
+    },
+    {
+        "question": "When scanning soft-aligned nanofibers, I see tracking loss along the fiber axis-should I change scan direction or engage mode?"
+    },
+    {
+        "question": "My sample shows anisotropic stiffness-how can I adapt feedback gains to compensate for lateral compliance variation across the field?"
+    },
+    {
+        "question": "When scanning a sample with periodic nano-patterns, I notice inconsistent tracking across similar features. Could scanner resonance or feedback bandwidth be affecting performance, and how can I fine-tune the system to maintain consistent tracking?"
+    }
+]

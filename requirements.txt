@@ -1,0 +1,22 @@
+# Core LangChain packages
+langchain
+langchain-core
+
+# OpenAI integration (GPT-4, GPT-4o)
+langchain-openai
+openai
+
+# Anthropic integration (Claude 3)
+langchain-anthropic
+anthropic
+
+# Google Gemini integration (Gemini Pro / Flash)
+langchain-google-genai
+google-generativeai
+
+# Data processing
+pandas
+PyPDF2
+
+# Optional: for improved dev type checking
+typing-extensions
