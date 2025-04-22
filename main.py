@@ -10,16 +10,18 @@ load_dotenv()
 from langchain_openai import ChatOpenAI
 from langchain_anthropic import ChatAnthropic
 from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_groq import ChatGroq
 
 from langchain.schema.messages import SystemMessage, HumanMessage
 from pydantic import BaseModel, Field
 from langchain.output_parsers.structured import StructuredOutputParser
 
-AVAILABLE_MODELS = ['gpt4o', 'claude3', 'gemini']
+AVAILABLE_MODELS = ['gpt4o', 'claude3', 'gemini', 'groq']
 API_KEYS = {
     'gpt4o': os.getenv("OPENAI_API_KEY"),
     'claude3': os.getenv("ANTHROPIC_API_KEY"),
-    'gemini': os.getenv("GOOGLE_API_KEY")
+    'gemini': os.getenv("GOOGLE_API_KEY"),
+    'groq': os.getenv("GROQ_API_KEY")
 }
 
 def get_model(model):
@@ -36,6 +38,8 @@ def get_model(model):
         return ChatAnthropic(model="claude-3-5-sonnet-latest", anthropic_api_key=api_key)
     elif model == 'gemini':
         return ChatGoogleGenerativeAI(model="gemini-2.0-flash", google_api_key=api_key)
+    elif model == 'groq':
+        return ChatGroq(model="llama3-8b-8192", groq_api_key=api_key)
 
 class AFMResponse(BaseModel):
     answer: str = Field(description="A breif and technical answer to the AFM question.")
@@ -110,7 +114,7 @@ def main(model_name):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='AFM Model Comparison')
-    parser.add_argument('--model', type=str, default='gpt4o', choices=['gpt4o', 'claude3', 'gemini'], help='Model to use')
+    parser.add_argument('--model', type=str, default='gpt4o', choices=['gpt4o', 'claude3', 'gemini', 'groq'], help='Model to use')
     args = parser.parse_args()
 
     main(args.model)

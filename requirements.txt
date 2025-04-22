@@ -17,6 +17,10 @@ anthropic
 langchain-google-genai
 google-generativeai
 
+# Groq integration (Groq)
+langchain-groq
+groq
+
 # Data processing
 pandas
 PyPDF2
