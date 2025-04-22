@@ -33,7 +33,7 @@ def get_model(model):
     if model == 'gpt4o':
         return ChatOpenAI(model_name="gpt-4o", openai_api_key=api_key)
     elif model == 'claude3':
-        return ChatAnthropic(model="claude-3-5-haiku-latest", anthropic_api_key=api_key)
+        return ChatAnthropic(model="claude-3-5-sonnet-latest", anthropic_api_key=api_key)
     elif model == 'gemini':
         return ChatGoogleGenerativeAI(model="gemini-2.0-flash", google_api_key=api_key)
 
@@ -77,7 +77,7 @@ def main(model_name):
     results = []
 
     # Loop through each question and get responses from each model
-    for q in questions[:5]:
+    for idx, q in enumerate(questions):
         # format_instructions = parser.get_format_instructions()
         # prompt = f"""
         # {format_instructions}
@@ -96,6 +96,7 @@ def main(model_name):
         print(f"\n[{model_name}]:\n{model_resp}")
         # Save to list
         results.append({
+            "idx": idx,
             "Question": q,
             # "Model": model_name,
             "Answer": model_resp.answer,
@@ -103,7 +104,7 @@ def main(model_name):
         })
 
     # Export to JSON instead of CSV
-    with open(f"afm_model_comparison_{model_name}.json", 'w') as f:
+    with open(f"./llm_responses/responses_from_{model_name}.json", 'w') as f:
         json.dump(results, f, indent=4)
 
 
