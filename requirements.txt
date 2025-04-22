@@ -2,6 +2,9 @@
 langchain
 langchain-core
 
+# Pydantic
+pydantic
+
 # OpenAI integration (GPT-4, GPT-4o)
 langchain-openai
 openai
