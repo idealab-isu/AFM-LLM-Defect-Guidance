@@ -16,13 +16,18 @@ from langchain.schema.messages import SystemMessage, HumanMessage
 from pydantic import BaseModel, Field
 from langchain.output_parsers.structured import StructuredOutputParser
 
-AVAILABLE_MODELS = ['gpt4o', 'claude3', 'gemini', 'groq']
+from langchain_core.rate_limiters import InMemoryRateLimiter
+
+AVAILABLE_MODELS = ['gpt4o', 'gpt-o3-mini', 'claude3-5-sonnet', 'claude3-7-sonnet', 'gemini', 'groq']
 API_KEYS = {
     'gpt4o': os.getenv("OPENAI_API_KEY"),
-    'claude3': os.getenv("ANTHROPIC_API_KEY"),
+    'gpt-o3-mini': os.getenv("OPENAI_API_KEY"),
+    'claude3-5-sonnet': os.getenv("ANTHROPIC_API_KEY"),
+    'claude3-7-sonnet': os.getenv("ANTHROPIC_API_KEY"),
     'gemini': os.getenv("GOOGLE_API_KEY"),
     'groq': os.getenv("GROQ_API_KEY")
 }
+
 
 def get_model(model):
     if model not in AVAILABLE_MODELS:
@@ -32,14 +37,25 @@ def get_model(model):
     if not api_key:
         raise ValueError(f"API key not found for model: {model}")
 
+    rate_limiter = InMemoryRateLimiter(
+        requests_per_second=0.1,  # <-- Super slow! We can only make a request once every 10 seconds!!
+        check_every_n_seconds=0.1,  # Wake up every 100 ms to check whether allowed to make a request,
+        max_bucket_size=10,  # Controls the maximum burst size.
+    )
     if model == 'gpt4o':
-        return ChatOpenAI(model_name="gpt-4o", openai_api_key=api_key)
-    elif model == 'claude3':
+        return ChatOpenAI(model_name="gpt-4o", openai_api_key=api_key, rate_limiter=rate_limiter)
+    elif model == 'gpt-o3-mini':
+        return ChatOpenAI(model_name="o3-mini", openai_api_key=api_key, rate_limiter=rate_limiter)
+    elif model == 'claude3-5-sonnet':
         return ChatAnthropic(model="claude-3-5-sonnet-latest", anthropic_api_key=api_key)
+    elif model == 'claude3-7-sonnet':
+        return ChatAnthropic(model="claude-3-7-sonnet-latest", anthropic_api_key=api_key)
     elif model == 'gemini':
-        return ChatGoogleGenerativeAI(model="gemini-2.0-flash", google_api_key=api_key)
+        return ChatGoogleGenerativeAI(model="gemini-2.0-flash", google_api_key=api_key, rate_limiter=rate_limiter)
+        #return ChatGoogleGenerativeAI(model="gemini-2.5-pro-exp-03-25", google_api_key=api_key)
     elif model == 'groq':
-        return ChatGroq(model="llama3-8b-8192", groq_api_key=api_key)
+        # return ChatGroq(model="llama3-8b-8192", groq_api_key=api_key)
+        return ChatGroq(model="deepseek-r1-distill-llama-70b", groq_api_key=api_key, rate_limiter=rate_limiter)
 
 class AFMResponse(BaseModel):
     answer: str = Field(description="A breif and technical answer to the AFM question.")
@@ -80,41 +96,47 @@ def main(model_name):
     # Placeholder for responses
     results = []
 
-    # Loop through each question and get responses from each model
-    for idx, q in enumerate(questions):
-        # format_instructions = parser.get_format_instructions()
-        # prompt = f"""
-        # {format_instructions}
-        # Question: {q}
-        # """
-        prompt = q
-        user_msg = HumanMessage(content=prompt)
-        messages = [system_prompt, user_msg]
+    with open(f"./llm_responses/running_responses_from_{model_name}.json", 'a') as f:
 
-        # Get responses
-        print(f"\n🧪 Question: {q}\n{'='*80}")
-        model_with_structured_output = model.with_structured_output(AFMResponse)
-        model_resp = model_with_structured_output.invoke(messages)
-        # model_resp = model.invoke(messages).content
-        # model_resp = parser.parse(model_resp)
-        print(f"\n[{model_name}]:\n{model_resp}")
-        # Save to list
-        results.append({
-            "idx": idx,
-            "Question": q,
-            # "Model": model_name,
-            "Answer": model_resp.answer,
-            "Recommendations": model_resp.recommendations
-        })
+        # Loop through each question and get responses from each model
+        for idx, q in enumerate(questions[39:]):
+            # format_instructions = parser.get_format_instructions()
+            # prompt = f"""
+            # {format_instructions}
+            # Question: {q}
+            # """
+            prompt = q
+            user_msg = HumanMessage(content=prompt)
+            messages = [system_prompt, user_msg]
 
+            # Get responses
+            print(f"\n🧪 Question {idx+1}: {q}\n{'='*80}")
+            model_with_structured_output = model.with_structured_output(AFMResponse)
+            model_resp = model_with_structured_output.invoke(messages)
+            # model_resp = model.invoke(messages).content
+            # model_resp = parser.parse(model_resp)
+            print(f"\n[{model_name}]:\n{model_resp}")
+            # Save to list
+            result = {
+                "idx": idx,
+                "Question": q,
+                # "Model": model_name,
+                "Answer": model_resp.answer,
+                "Recommendations": model_resp.recommendations
+            }
+            results.append(result)
+            json.dump(result, f, indent=4)
+            f.write(",")
+            f.write("\n")
+        
     # Export to JSON instead of CSV
     with open(f"./llm_responses/responses_from_{model_name}.json", 'w') as f:
-        json.dump(results, f, indent=4)
+       json.dump(results, f, indent=4)
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='AFM Model Comparison')
-    parser.add_argument('--model', type=str, default='gpt4o', choices=['gpt4o', 'claude3', 'gemini', 'groq'], help='Model to use')
+    parser.add_argument('--model', type=str, default='gpt4o', choices=['gpt4o', 'gpt-o3-mini', 'claude3-5-sonnet', 'claude3-7-sonnet', 'gemini', 'groq'], help='Model to use')
     args = parser.parse_args()
 
     main(args.model)

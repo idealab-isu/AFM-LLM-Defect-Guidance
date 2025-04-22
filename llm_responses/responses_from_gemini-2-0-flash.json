@@ -1,0 +1,524 @@
+[
+    {
+        "idx": 0,
+        "Question": "I'm imaging soft polymer films, and over time the contrast gets worse-how can I tell if the tip is contaminated, and what precautions can I take during scanning to prevent this?",
+        "Answer": "Tip contamination can occur when material from the sample adheres to the AFM tip, reducing image resolution and altering contrast. Identifying it involves observing changes like decreased resolution, asymmetric tip shape in images, or a 'double tip' artifact. Force curves might show adhesion or altered tip-sample interactions.",
+        "Recommendations": [
+            "Use tapping mode or PeakForce tapping to reduce lateral forces and minimize sample contact.",
+            "Scan at lower forces to prevent picking up sample material.",
+            "Regularly clean the tip using established methods (e.g., plasma cleaning, sonication in solvents)"
+        ]
+    },
+    {
+        "idx": 1,
+        "Question": "After scanning biological samples in fluid, the tip seems degraded-how can I reduce the chance of biofouling or sample transfer to the tip?",
+        "Answer": "Tip contamination in fluid AFM can arise from nonspecific adsorption of biomolecules. This can be mitigated by several strategies.",
+        "Recommendations": [
+            "Use small, high quality cantilevers",
+            "Optimize your buffer and pH to minimize electrostatic interactions",
+            "Use chemical crosslinking to stabilize the sample",
+            "Use a closed fluid cell to minimize contamination"
+        ]
+    },
+    {
+        "idx": 2,
+        "Question": "What scanning parameters can I tune to reduce the risk of tip contamination when imaging adhesive surfaces like hydrogels or organic thin films?",
+        "Answer": "To mitigate tip contamination on adhesive surfaces, optimize scanning parameters by reducing the applied force, increasing the scan rate, and using stiffer cantilevers. These adjustments minimize contact time and adhesion, thus decreasing the likelihood of contamination.",
+        "Recommendations": [
+            "Use lower forces",
+            "Increase the scan rate",
+            "Use stiffer cantilevers"
+        ]
+    },
+    {
+        "idx": 3,
+        "Question": "How can I determine if a drop in resolution is due to tip wear vs tip contamination, and what are the cleaning or replacement protocols?",
+        "Answer": "Differentiating between tip wear and contamination involves assessing the nature of the resolution loss. Tip wear typically results in gradual resolution degradation and a flattened tip apex, reducing sharpness over time. Contamination, however, often causes a more abrupt resolution decrease, potentially with asymmetric image artifacts or 'streaking' in the scan direction if the contamination is asymmetrically distributed on the tip. Sometimes, you can compare the performance of the tip with a reference sample that you know well. If the resolution is poor on the reference sample, it is likely a tip issue.",
+        "Recommendations": [
+            "Use established cleaning procedures such as sonication in solvents (e.g., ethanol, acetone), plasma cleaning, or UV/Ozone cleaning to remove contaminants.",
+            "If cleaning does not restore the tip's performance, replace the AFM tip with a new one to ensure optimal imaging quality."
+        ]
+    },
+    {
+        "idx": 4,
+        "Question": "Can certain material types or surface treatments increase the likelihood of contaminating the tip? How can I prepare my sample differently to avoid that?",
+        "Answer": "Yes, material types and surface treatments can increase the likelihood of tip contamination. For example, materials that are soft, sticky, or prone to flaking can easily transfer to the tip during scanning. Similarly, surfaces treated with adhesives or lubricants may also cause contamination.",
+        "Recommendations": [
+            "Use proper storage for AFM tips to prevent dust and other airborne particles from settling on the tip.",
+            "If possible, perform AFM imaging in a liquid environment. The liquid can help to dissolve contaminants and reduce the adhesion between the tip and the sample.",
+            "Consider using a non-contact mode such as tapping mode, which can reduce the contact area and force between the tip and the sample, minimizing the chance of contamination."
+        ]
+    },
+    {
+        "idx": 5,
+        "Question": "I'm working with live cell cultures, and the tip seems to get contaminated during extended imaging-how can I minimize biological debris sticking to the tip?",
+        "Answer": "Tip contamination in live cell AFM is often due to the adsorption of proteins and cellular debris. This alters the tip's shape and surface properties, leading to decreased resolution and inaccurate force measurements.",
+        "Recommendations": [
+            "Use sharp, clean tips (e.g., regularly clean with UV or plasma).",
+            "Optimize imaging parameters to minimize contact time and force.",
+            "Consider using functionalized tips with specific coatings to reduce non-specific adhesion.",
+            "Implement a washing step with appropriate buffer solutions during imaging."
+        ]
+    },
+    {
+        "idx": 6,
+        "Question": "After scanning hydrated tissue sections, I see ghost features and blurred edges-what kind of tip care or material compatibility checks should I perform to prevent this?",
+        "Answer": "The ghost features and blurred edges observed after scanning hydrated tissue sections are indicative of 'Tip Contamination' or 'Not Tracking' issues.",
+        "Recommendations": [
+            "Use sharp probes suitable for imaging soft materials.",
+            "Verify the probe resonance frequency in liquid.",
+            "Apply appropriate force control settings."
+        ]
+    },
+    {
+        "idx": 7,
+        "Question": "How do I choose tip material and coating to reduce contamination when imaging sticky biomolecules like DNA or unfolded proteins?",
+        "Answer": "To minimize tip contamination when imaging sticky biomolecules, consider using silicon or silicon nitride tips with hydrophilic coatings like silicon oxide or self-assembled monolayers (SAMs) terminated with hydroxyl or carboxyl groups. These coatings reduce the adhesion of biomolecules to the tip. Avoid coatings that promote hydrophobic interactions.",
+        "Recommendations": [
+            "Use hydrophilic coatings like silicon oxide or SAMs terminated with hydroxyl or carboxyl groups.",
+            "Avoid hydrophobic coatings.",
+            " \u0440\u0435\u0433\u0443\u043b\u044f\u0440\u043d\u043e \u043e\u0447\u0438\u0449\u0430\u0439\u0442\u0435 \u0437\u043e\u043d\u0434 \u0441 \u043f\u043e\u043c\u043e\u0449\u044c\u044e \u0423\u0424-\u043e\u0431\u043b\u0443\u0447\u0435\u043d\u0438\u044f \u0438\u043b\u0438 \u043f\u043b\u0430\u0437\u043c\u0435\u043d\u043d\u043e\u0439 \u043e\u0447\u0438\u0441\u0442\u043a\u0438."
+        ]
+    },
+    {
+        "idx": 8,
+        "Question": "I-m imaging fibrous extracellular matrix proteins, and resolution decreases with each scan-how can I prevent material buildup on the tip during repeated passes?",
+        "Answer": "Tip contamination is a common issue when imaging soft materials such as fibrous extracellular matrix proteins. Material buildup on the tip can occur due to adhesion between the tip and the sample, leading to decreased resolution and image artifacts.",
+        "Recommendations": [
+            "Use tapping mode or PeakForce tapping to minimize contact and lateral forces, reducing the chance of material sticking to the tip.",
+            "Optimize scanning parameters such as amplitude, setpoint, and scan speed to minimize tip-sample interaction forces.",
+            "Use a sharper tip with a smaller radius of curvature to improve resolution and reduce the contact area, which can decrease adhesion.",
+            "Apply a protective coating to the tip to reduce adhesion. ",
+            "Periodically clean the tip using UV/Ozone cleaning or sonication in appropriate solvents to remove contaminants."
+        ]
+    },
+    {
+        "idx": 9,
+        "Question": "When imaging soft protein layers in fluid, I notice a rapid drop in resolution-could this be due to tip contamination, and how can I reduce fouling during long scans?",
+        "Answer": "Tip contamination is a common issue when imaging soft protein layers in fluid, leading to a rapid drop in resolution. Proteins can adhere to the tip, broadening its effective size and reducing its ability to resolve fine features. This is especially problematic during long scans as more material accumulates.",
+        "Recommendations": [
+            "Use sharper tips with smaller radii of curvature to minimize the contact area and reduce the chance of contamination.",
+            "Apply short UV cleaning or plasma cleaning to remove organic contaminants before imaging.",
+            "Optimize your imaging parameters to minimize the tip-sample contact force, which can promote adhesion. Consider using lighter tapping forces or higher setpoint ratios in tapping mode.",
+            "If possible, use functionalized tips with chemical properties that resist protein adsorption, such as self-assembled monolayers (SAMs) or polyethylene glycol (PEG) coatings.",
+            "Routinely rinse the AFM tip with appropriate solvents (e.g., ethanol, isopropanol) or enzymatic cleaning solutions to remove any loosely bound contaminants during long scans."
+        ]
+    },
+    {
+        "idx": 10,
+        "Question": "I'm imaging a lipid bilayer in fluid and notice fuzzy edges after a few scans-how can I reduce molecular transfer to the tip?",
+        "Answer": "Fuzzy edges in lipid bilayer imaging suggest lipid transfer to the tip, altering its interaction with the sample. This can be due to strong tip-sample adhesion or inappropriate imaging parameters.",
+        "Recommendations": [
+            "Use soft tapping mode or PeakForce QNM to minimize contact force and lateral forces.",
+            "Reduce the setpoint/amplitude to decrease the tip-sample interaction force.",
+            "Ensure the cantilever spring constant is appropriate for fluid imaging (typically lower than in air).",
+            "Use hydrophilic tips to reduce hydrophobic interactions with the lipid bilayer.",
+            "Scan at a slower scan rate to allow the feedback loop to accurately track the surface."
+        ]
+    },
+    {
+        "idx": 11,
+        "Question": "What role does relative humidity play in promoting tip contamination while scanning hygroscopic samples like polysaccharides?",
+        "Answer": "High relative humidity increases the formation of a water meniscus between the AFM tip and a hygroscopic sample. This meniscus enhances capillary forces, which can lead to the adhesion of contaminants from the sample surface to the tip, causing tip contamination.",
+        "Recommendations": [
+            "Use controlled environment AFM with low humidity.",
+            "Employ tapping mode or non-contact mode to reduce tip-sample contact.",
+            " \u0440\u0435\u0433\u0443\u043b\u044f\u0440\u043d\u043e \u043e\u0447\u0438\u0449\u0430\u0439\u0442\u0435 \u0437\u043e\u043d\u0434 \u0441 \u043f\u043e\u043c\u043e\u0449\u044c\u044e \u0423\u0424-\u043e\u0431\u043b\u0443\u0447\u0435\u043d\u0438\u044f \u0438\u043b\u0438 \u043f\u043b\u0430\u0437\u043c\u044b"
+        ]
+    },
+    {
+        "idx": 12,
+        "Question": "I frequently switch between dry and fluid imaging sessions-how should I clean or condition the tip between sessions to prevent cross-contamination?",
+        "Answer": "To prevent cross-contamination when switching between dry and fluid imaging, it is crucial to thoroughly clean the AFM tip. Here is a general procedure to follow:",
+        "Recommendations": [
+            "Rinse the tip with a series of solvents of decreasing polarity (e.g., toluene, acetone, ethanol, and DI water) when switching from dry to fluid imaging. This will remove any hydrophobic contaminants. When switching from fluid to dry imaging, rinse the tip extensively with DI water to remove salts, followed by a volatile solvent like ethanol or isopropyl alcohol to aid drying. Consider using a plasma cleaner to remove organic contaminants adsorbed onto the tip. Expose the tip to oxygen or argon plasma to remove organic contaminants. Use a UV/Ozone cleaner to remove organic contaminants. Expose the tip to UV light in the presence of ozone to remove organic contaminants.",
+            "Always store tips in a clean, dry environment to prevent contamination. Use the tip box to store the tips."
+        ]
+    },
+    {
+        "idx": 13,
+        "Question": "How can I detect early signs of organic contamination on the tip before they significantly affect resolution?",
+        "Answer": "Early detection of organic contamination on AFM tips can be achieved by monitoring the tip's performance during imaging. Look for a gradual decrease in image resolution, increased background noise, or changes in the tip's resonance frequency and Q-factor during tapping mode. Additionally, regularly inspecting the tip under an optical microscope or SEM can reveal visible signs of contamination before performance is severely impacted.",
+        "Recommendations": [
+            "Monitor image resolution and noise levels during imaging.",
+            "Check tip resonance frequency and Q-factor in tapping mode.",
+            "Regularly inspect the tip under an optical microscope or SEM."
+        ]
+    },
+    {
+        "idx": 14,
+        "Question": "I'm working with hydrophobic surfaces-how does tip hydrophilicity impact contamination risk, and how should I choose the tip coating?",
+        "Answer": "Tip hydrophilicity significantly increases contamination risk on hydrophobic surfaces due to stronger adhesion of hydrophobic contaminants to the tip. This can lead to imaging artifacts and reduced resolution.",
+        "Recommendations": [
+            "Use hydrophobic tip coatings (e.g., self-assembled monolayers) to minimize adhesion of hydrophobic contaminants.",
+            "Clean the tip regularly using appropriate solvents or plasma cleaning to remove any accumulated contaminants.",
+            "Consider using tapping mode or PeakForce tapping to reduce lateral forces and minimize the pick-up of contaminants."
+        ]
+    },
+    {
+        "idx": 15,
+        "Question": "Are there best practices for storing AFM tips to reduce contamination risk before imaging sensitive protein samples?",
+        "Answer": "To minimize contamination of AFM tips before imaging sensitive protein samples, proper storage is crucial. Tips should be stored in a clean, dry environment, preferably in a dedicated container designed for AFM tips. Avoid storing tips in open areas where they can accumulate dust or airborne contaminants.",
+        "Recommendations": [
+            "Store AFM tips in a clean, dry, and closed container.",
+            "Use a desiccator or a container with desiccant to control humidity.",
+            "Handle tips with clean, non-powdered gloves or cleanroom tweezers.",
+            "Regularly clean the storage container."
+        ]
+    },
+    {
+        "idx": 16,
+        "Question": "Can using a closed fluid cell reduce contamination while imaging weakly bound soft matter in aqueous conditions?",
+        "Answer": "Yes, using a closed fluid cell can reduce contamination while imaging weakly bound soft matter in aqueous conditions. The closed environment minimizes exposure to airborne contaminants, which is particularly important for delicate samples.",
+        "Recommendations": [
+            "Use a closed fluid cell to minimize exposure to airborne contaminants during imaging."
+        ]
+    },
+    {
+        "idx": 17,
+        "Question": "What are the recommended low-force settings to minimize tip embedding and contamination in soft hydrogel networks?",
+        "Answer": "To minimize tip embedding and contamination in soft hydrogel networks, it is recommended to use the lowest possible force settings during AFM imaging. This typically involves reducing the setpoint force or amplitude setpoint to the minimum level necessary to maintain stable tip-sample contact and achieve acceptable image resolution. Additionally, employing probes with sharper tips and smaller tip radii can help to decrease the contact area and pressure exerted on the sample, further minimizing the risk of tip embedding and contamination.",
+        "Recommendations": [
+            "Use the lowest possible force settings",
+            "Reduce the setpoint force or amplitude setpoint",
+            "Employ probes with sharper tips and smaller tip radii"
+        ]
+    },
+    {
+        "idx": 18,
+        "Question": "How do I distinguish between phase image artifacts from surface features and those due to tip contamination?",
+        "Answer": "Tip contamination can cause phase shifts due to altered tip-sample interactions. These artifacts often appear as blurry, inconsistent features that don't correlate with topography. Unlike genuine surface features, contamination-related phase artifacts may change or disappear after tip cleaning or replacement.",
+        "Recommendations": [
+            "Perform AFM on a clean reference sample to check the tip condition.",
+            "Try cleaning the tip using plasma cleaning or solvent rinsing."
+        ]
+    },
+    {
+        "idx": 19,
+        "Question": "Is there a recommended plasma or UV-ozone cleaning protocol for restoring contaminated tips used in biological samples?",
+        "Answer": "Plasma cleaning is effective for removing organic contaminants from AFM tips. Oxygen plasma is commonly used to oxidize and remove organic materials. UV-ozone cleaning is another method that utilizes UV light to generate ozone, which then oxidizes and removes organic contaminants.",
+        "Recommendations": [
+            "Use a low power setting to prevent tip damage during plasma cleaning.",
+            "Monitor the tip apex radius before and after cleaning to ensure sharpness is maintained.",
+            "Adjust the cleaning time based on the extent of contamination, typically ranging from a few minutes to half an hour.",
+            "Always perform AFM imaging on a standard sample after cleaning to verify tip functionality."
+        ]
+    },
+    {
+        "idx": 20,
+        "Question": "When imaging samples functionalized with charged ligands, how does electrostatic interaction contribute to tip fouling, and how can I mitigate it?",
+        "Answer": "Electrostatic interactions between the charged ligands on the sample and the AFM tip can lead to increased adhesion and the accumulation of ligands on the tip, causing tip fouling. This is particularly prevalent in liquid environments where ions can mediate stronger interactions. Moreover, the presence of a charged sample can modify the meniscus force.",
+        "Recommendations": [
+            "Use conductive tips (e.g., gold or platinum coated) and ensure proper grounding to minimize electrostatic forces.",
+            "Image in electrolytes to screen electrostatic interactions.",
+            "Apply a bias voltage to the tip or sample to compensate for surface charges."
+        ]
+    },
+    {
+        "idx": 21,
+        "Question": "What rinsing steps should be followed when transferring protein-coated mica samples to the AFM to reduce tip fouling?",
+        "Answer": "To minimize tip fouling when transferring protein-coated mica samples to the AFM, rinse briefly with the buffer solution used for protein adsorption to remove any unbound protein. Then, rinse with ultrapure water to remove salts, as salt crystals can contaminate the tip. Perform these rinses gently to avoid disrupting the protein layer.",
+        "Recommendations": [
+            "Use gentle rinsing techniques.",
+            "Rinse with buffer solution.",
+            "Rinse with ultrapure water."
+        ]
+    },
+    {
+        "idx": 22,
+        "Question": "For imaging high-resolution DNA origami structures, how often should I check for tip contamination and recalibrate?",
+        "Answer": "For high-resolution DNA origami imaging, check for tip contamination before each imaging session and after any noticeable degradation in image quality. Recalibrate the AFM (adjust gains, setpoints, and feedback parameters) whenever you change the tip, sample, or imaging parameters, or if image quality deteriorates.",
+        "Recommendations": [
+            "Check tip before each session",
+            "Recalibrate after tip change",
+            "Recalibrate after sample change",
+            "Recalibrate after imaging parameter change",
+            "Recalibrate if image degrades"
+        ]
+    },
+    {
+        "idx": 23,
+        "Question": "I observe gradual contrast loss across sequential tiles in a stitched image-could progressive tip contamination be the cause, and how can I validate this?",
+        "Answer": "Yes, progressive tip contamination is a plausible cause for gradual contrast loss in sequentially acquired tiles of a stitched AFM image. As the tip scans, it can accumulate debris, leading to a reduction in resolution and signal strength, manifesting as a loss of contrast. The effect would be more pronounced in later tiles.",
+        "Recommendations": [
+            "Acquire high-resolution images of a standard sample before and after imaging your sample to check the tip resolution.",
+            "Monitor the tip condition periodically during imaging by observing changes in image quality or resolution.",
+            "If contamination is suspected, try cleaning the tip using established methods, such as plasma cleaning or sonication in appropriate solvents, and check if the contrast improves."
+        ]
+    },
+    {
+        "idx": 24,
+        "Question": "What's the safest way to clean a tip in-situ during a long imaging session without fully retracting it or disturbing the fluid environment?",
+        "Answer": "In situ tip cleaning is delicate. Try gentle tapping on a clean, hard surface within the fluid cell or briefly increase the imaging force if your AFM allows closed-loop force control to dislodge contaminants. However, monitor your force and amplitude closely to prevent damage.",
+        "Recommendations": [
+            "Use tapping mode to dislodge contaminants.",
+            "Gently increase the imaging force."
+        ]
+    },
+    {
+        "idx": 25,
+        "Question": "I'm imaging a hard metallic surface and I notice the tip is skipping over topography-what feedback loop settings or scan parameters should I modify?",
+        "Answer": "If the AFM tip is skipping over the topography, the feedback loop parameters are not optimized for the surface being scanned. The feedback loop parameters are too slow to accurately track the surface.",
+        "Recommendations": [
+            "Reduce the scan speed.",
+            "Increase the proportional gain.",
+            "Increase the integral gain."
+        ]
+    },
+    {
+        "idx": 26,
+        "Question": "Why does my AFM lose contact with the sample while scanning a soft material in tapping mode, and how can I maintain good tracking without damaging the surface?",
+        "Answer": "When scanning soft materials in tapping mode, the AFM tip can lose contact with the sample due to insufficient force or improper tapping parameters. This can arise from a setpoint that is too high, meaning the tip is not tapping hard enough, or from a drive frequency far from the cantilever's resonance, reducing oscillation amplitude and sensitivity to surface interactions.",
+        "Recommendations": [
+            "Decrease the setpoint to increase the tapping force, ensuring the tip interacts more consistently with the surface.",
+            "Optimize the drive frequency to match the cantilever's resonance frequency in the medium, maximizing oscillation amplitude and sensitivity.",
+            "Reduce the scan speed to allow the feedback loop more time to adjust the tip-sample distance, maintaining stable contact.",
+            "Use a sharper tip with a smaller radius of curvature to improve contact and reduce the force needed for imaging.",
+            "If possible, use a cantilever with a lower spring constant to increase sensitivity to the surface."
+        ]
+    },
+    {
+        "idx": 27,
+        "Question": "I see flat lines in my topography image that suggest tracking failure-what environmental or scanner factors could be contributing to this, and how do I address them?",
+        "Answer": "Not tracking in AFM can arise from environmental vibrations exceeding the feedback system's ability to compensate, or from scanner non-linearities/calibration errors causing the tip to lose contact with the surface. ",
+        "Recommendations": [
+            "Ensure AFM is on a vibration isolation table and consider acoustic isolation.",
+            "Reduce scan speed to allow the feedback system to keep up with surface changes.",
+            "Check scanner calibration and linearity; recalibrate if necessary."
+        ]
+    },
+    {
+        "idx": 28,
+        "Question": "How does the scan speed or line rate affect the ability of the tip to track rough features, and what's the best strategy for balancing speed and stability?",
+        "Answer": "Scan speed and line rate significantly impact the AFM tip's ability to accurately track rough features. Higher speeds can lead to tracking errors, where the tip cannot properly follow the surface topography, resulting in distorted or inaccurate images. This is because the feedback system may not be able to respond quickly enough to keep the tip in contact or maintain a constant force. Conversely, slower speeds allow the feedback system more time to adjust, improving tracking accuracy.",
+        "Recommendations": [
+            "Reduce scan speed or line rate to allow the feedback system more time to respond to surface changes.",
+            "Optimize feedback loop parameters (e.g., proportional and integral gains) for the specific sample and scan conditions. Lower gains improve stability but reduce responsiveness, while higher gains improve responsiveness but can cause oscillations.",
+            "Use a sharper tip with a smaller radius of curvature to improve the tip's ability to access narrow or deep features.",
+            "Ensure the cantilever's resonant frequency is much higher than the scan frequency to avoid resonance effects that can cause tracking errors.",
+            "For very rough samples, consider using tapping mode (AC mode) to minimize lateral forces and improve tracking."
+        ]
+    },
+    {
+        "idx": 29,
+        "Question": "When I zoom into nanostructures on my sample, the AFM fails to follow sharp edges-what tip and mode settings improve tracking on high-aspect-ratio features?",
+        "Answer": "When imaging nanostructures with sharp edges, AFM tracking errors arise from the tip's inability to follow steep topographies. This is pronounced in high-aspect-ratio features where the tip struggles to maintain consistent contact or optimal oscillation. Using smaller tip radius, optimizing feedback loop, and decreasing scan speed can help.",
+        "Recommendations": [
+            "Use sharper tips with smaller radii of curvature to enhance the ability to trace steep edges.",
+            "Reduce the scan speed to allow the feedback loop more time to react to height changes.",
+            "Optimize feedback loop parameters (proportional and integral gains) for faster response without causing oscillations.",
+            "Consider using high-resolution imaging modes like tapping mode or peak force tapping to minimize lateral forces and improve tracking."
+        ]
+    },
+    {
+        "idx": 30,
+        "Question": "While imaging soft live cells in tapping mode, I see sudden height drops and tracking loss-how can I tune feedback parameters to avoid indentation or disengagement?",
+        "Answer": "In tapping mode, sudden height drops during soft sample imaging indicate that the tip is either indenting the sample or losing track of the surface. This is often due to non-optimized feedback parameters. The proportional gain (P) controls how quickly the feedback loop responds to errors, while the integral gain (I) eliminates steady-state errors. If P is too low, the feedback will be sluggish, causing the tip to crash into the surface. If P is too high, the feedback loop will oscillate, leading to instability and potential damage. Similarly, if I is too low, the feedback loop will not be able to maintain the setpoint accurately, leading to inaccurate height measurements. If I is too high, the feedback loop will overcorrect, leading to oscillations and instability.",
+        "Recommendations": [
+            "Adjust the setpoint ratio: Increase the setpoint ratio (the ratio of the tapping amplitude while imaging to the free-air amplitude) to reduce the force applied to the sample.",
+            "Optimize gains: Increase the proportional gain (P) to improve responsiveness without causing oscillations. Increase the integral gain (I) to eliminate steady-state errors, but avoid overcorrection.",
+            "Reduce scan speed: Slow down the scan speed to give the feedback loop more time to react to changes in the surface topography.",
+            "Use a sharper tip: A sharper tip can improve image resolution and reduce the force required to maintain tapping.",
+            "Try different modes: If the issue persists, consider using alternative AFM modes like PeakForce Tapping or Quantitative Imaging Mode, which are designed to minimize sample deformation and improve tracking on soft samples."
+        ]
+    },
+    {
+        "idx": 31,
+        "Question": "I observe periodic loss of tracking on collagen-coated tissue samples-could this be due to topographical steepness, and how should I adjust my scan parameters?",
+        "Answer": "Yes, periodic loss of tracking, especially on collagen-coated tissue, can indeed be attributed to topographical steepness exceeding the scanner's tracking capabilities, particularly if the collagen coating introduces significant surface roughness or sharp features. The AFM feedback loop may struggle to maintain accurate tip-sample engagement during rapid height changes.",
+        "Recommendations": [
+            "Reduce the scan speed to allow the feedback loop more time to react to height changes.",
+            "Decrease the setpoint value (force) to ensure gentler tip-sample interaction, which can improve tracking stability on steep slopes. However, avoid excessive reduction to maintain image resolution.",
+            "Optimize the proportional and integral (PI) gain settings of the feedback loop to improve tracking responsiveness without inducing oscillations. Start by reducing the integral gain if oscillations are present.",
+            "Use a sharper tip with a smaller opening angle to negotiate steep features more effectively. However, consider that sharper tips are more prone to wear.",
+            "If available, engage higher-order scanning modes like lateral force microscopy (LFM) or PeakForce Quantitative Nanomechanical Mapping (QNM) to decouple topography tracking from force measurement, potentially improving tracking on challenging surfaces.",
+            "Ensure proper sample preparation to minimize abrupt height variations. Consider methods to create a more uniform collagen coating."
+        ]
+    },
+    {
+        "idx": 32,
+        "Question": "When zooming into nanometer-scale protein aggregates, my AFM fails to follow sharp topography-what tip specs and scanning parameters can ensure accurate tracking?",
+        "Answer": "To accurately track sharp topography of protein aggregates at the nanometer scale, your AFM tip should have a small tip radius, typically less than 10 nm, and a high aspect ratio to properly reach the bottom. Choose a cantilever with a high resonance frequency (e.g., >300 kHz) to allow for faster feedback response. Also important is to minimize the free amplitude.",
+        "Recommendations": [
+            "Use a sharper tip with a smaller radius of curvature.",
+            "Increase the feedback gains (proportional and integral) to improve the feedback loop response.",
+            "Reduce the scan speed to allow the feedback loop to keep up with the topography.",
+            "Decrease the free amplitude setpoint to enhance sensitivity to surface changes, but be careful to avoid tapping too hard."
+        ]
+    },
+    {
+        "idx": 33,
+        "Question": "I-m imaging hydrated cells on soft substrates, and feedback seems unstable-how does substrate compliance affect tracking, and what imaging mode would be more stable?",
+        "Answer": "Substrate compliance significantly affects AFM tracking stability, especially in liquid environments. Soft substrates can deform under the tip force, leading to unstable feedback loops as the cantilever oscillates or deflects excessively trying to maintain setpoint. This is more pronounced in contact mode where the tip is always in contact with the surface.&#x20;\\n\\n",
+        "Recommendations": [
+            "Use intermittent contact mode (tapping mode) or PeakForce tapping to minimize constant force application and reduce substrate deformation. These modes use oscillating cantilevers that briefly touch the surface, reducing lateral forces and improving stability on soft samples.",
+            "Reduce the applied force/setpoint to minimize substrate deformation. However, be cautious not to reduce it excessively, as it can lead to instability.",
+            "Increase the imaging frequency to improve feedback response time, but consider the limitations imposed by your AFM's hardware and the sample's properties.",
+            "Employ stiffer cantilevers to minimize deflection sensitivity to the sample's softness. However, stiffer cantilevers apply higher forces, so optimize the force applied."
+        ]
+    },
+    {
+        "idx": 34,
+        "Question": "During imaging of biofilms, the feedback loop can-t keep up with surface changes-how can I improve the tracking without increasing damage to the biological sample?",
+        "Answer": "The feedback loop struggles with rapid surface changes in biofilms. To improve tracking without damaging the sample, consider these approaches: reduce the scan speed, optimize feedback gains, use a sharper tip, and try using different scanning modes.",
+        "Recommendations": [
+            "Reduce scan speed",
+            "Optimize feedback gains",
+            "Use a sharper tip",
+            "Try different scanning modes like PeakForce or intermittent contact mode"
+        ]
+    },
+    {
+        "idx": 35,
+        "Question": "While scanning porous scaffolds, the feedback loop fails near void edges-how can I improve tracking over these abrupt depth changes?",
+        "Answer": "The feedback loop failing near void edges in porous scaffolds, is typically due to the abrupt height changes exceeding the feedback system's ability to compensate, resulting in a loss of tracking. This is further complicated by the probe's potential interaction with the sidewalls of the pores, which can introduce lateral forces and instability.",
+        "Recommendations": [
+            "Reduce the scan speed to give the feedback loop more time to react to height changes.",
+            "Decrease the setpoint to bring the tip closer to the surface, but be cautious to avoid crashes.",
+            "Use a sharper tip with a smaller opening angle to improve the imaging of steep sidewalls.",
+            "If available, engage the automatic setpoint adjustment to allow the AFM to dynamically optimize the setpoint during the scan.",
+            "Try different scanning modes, such as tapping mode or Lift mode"
+        ]
+    },
+    {
+        "idx": 36,
+        "Question": "On rough mineral surfaces, I experience repeated line skip artifacts-how should I adjust Z-piezo gain and PID parameters?",
+        "Answer": "Line skipping on rough surfaces indicates the Z-piezo's inability to maintain accurate tip-sample distance. The feedback loop isn't reacting quickly enough to surface variations.",
+        "Recommendations": [
+            "Reduce the scan rate to allow more time for the feedback loop to react.",
+            "Increase the Z-piezo gain to enhance the responsiveness of the feedback loop.",
+            "Optimize PID parameters: Increase the proportional (P) gain to improve responsiveness, but avoid instability. Adjust integral (I) gain to eliminate steady-state errors. Reduce derivative (D) gain to minimize overshoot and noise."
+        ]
+    },
+    {
+        "idx": 37,
+        "Question": "How can cantilever spring constant affect tracking stability when imaging stiff samples in intermittent contact mode?",
+        "Answer": "When imaging stiff samples in intermittent contact mode, a higher cantilever spring constant can improve tracking stability. This is because the higher spring constant provides a stronger restoring force, allowing the tip to quickly respond to surface features and maintain consistent intermittent contact. However, excessive spring constant can lead to increased tip wear and potential sample damage. An optimized spring constant enhances the feedback loop's ability to maintain a stable oscillation amplitude and setpoint, crucial for accurate topographic imaging.",
+        "Recommendations": [
+            "Select a cantilever with a spring constant appropriate for the sample's stiffness to ensure optimal tracking and minimize tip wear.",
+            "Adjust the feedback gains (proportional and integral) to optimize the cantilever's response to surface variations, ensuring stable intermittent contact.",
+            "Minimize environmental vibrations and acoustic noise that can disrupt the cantilever's oscillation and lead to tracking errors."
+        ]
+    },
+    {
+        "idx": 38,
+        "Question": "What imaging mode is best suited for tracking sharp nanoparticle clusters on a soft biological matrix?",
+        "Answer": "Tapping mode or PeakForce tapping are suitable for imaging sharp nanoparticle clusters on a soft biological matrix due to their ability to minimize lateral forces.  These modes use an oscillating cantilever to gently tap the surface, reducing the risk of displacing the nanoparticles or damaging the soft biological matrix. Force modulation mode could also be used.",
+        "Recommendations": [
+            "Optimize tapping parameters (amplitude, frequency).",
+            "Use sharp tips with high aspect ratio.",
+            "Reduce imaging force.",
+            "Consider using a stiffer cantilever to improve tracking."
+        ]
+    },
+    {
+        "idx": 39,
+        "Question": "What are signs of scanner creep leading to tracking issues during long-term imaging of patterned substrates?",
+        "Answer": "Scanner creep in AFM can manifest as a gradual drift in the image position over time, leading to a distorted appearance of the patterned substrate. This is particularly noticeable during long-term imaging. The drift is often non-linear and can occur in both the x and y axes. Regular recentering might be needed.",
+        "Recommendations": [
+            "Minimize the imaging time.",
+            "Use proper feedback loop parameters."
+        ]
+    },
+    {
+        "idx": 40,
+        "Question": "I notice tracking failure only during upward topography changes-what scan direction or phase settings should I revise?",
+        "Answer": "If tracking fails specifically on upward slopes, reduce the setpoint or increase the integral gain. This allows the feedback loop to respond more quickly to sudden height increases.",
+        "Recommendations": [
+            "Decrease setpoint",
+            "Increase integral gain",
+            "Optimize the feedback loop parameters."
+        ]
+    },
+    {
+        "idx": 41,
+        "Question": "What precautions should I take when switching from low-viscosity to high-viscosity fluid imaging environments to prevent tracking instability?",
+        "Answer": "When transitioning to high-viscosity fluids, reduce the scan speed and optimize feedback loop parameters (proportional and integral gains) to maintain stable tracking. High viscosity can dampen cantilever motion, requiring slower scanning and optimized feedback to accurately track the surface.",
+        "Recommendations": [
+            "Reduce scan speed",
+            "Optimize feedback loop parameters"
+        ]
+    },
+    {
+        "idx": 42,
+        "Question": "During high-magnification scans of fibrillar proteins, feedback becomes noisy-how can I enhance tip-sample coupling without increasing normal force?",
+        "Answer": "To enhance tip-sample coupling without increasing normal force during high-magnification scans of fibrillar proteins, reduce the free amplitude, increase the setpoint ratio, or use a sharper tip with a higher resonance frequency.",
+        "Recommendations": [
+            "Decrease Free Amplitude",
+            "Increase Setpoint Ratio",
+            "Use sharper tip"
+        ]
+    },
+    {
+        "idx": 43,
+        "Question": "My sample is mounted at a slight tilt-how can uneven loading lead to lateral tip displacement and tracking defects?",
+        "Answer": "When the sample is tilted, the AFM tip's movement across the surface becomes asymmetrical. On the higher side of the tilt, the tip experiences greater loading force due to the reduced distance. Conversely, the lower side experiences less force. This uneven force distribution can cause the tip to displace laterally, as it's pulled more towards the higher side where the force is greater. This lateral displacement compromises the tip's ability to accurately follow the surface contours, leading to tracking defects.",
+        "Recommendations": [
+            "Ensure the sample is properly aligned and parallel to the scanning plane to maintain uniform force distribution.",
+            "Reduce the scan size to minimize the effects of the tilt.",
+            "Use a calibration sample to correct the tilt."
+        ]
+    },
+    {
+        "idx": 44,
+        "Question": "When imaging a cross-section of a multilayer film, the AFM fails to track abrupt material transitions-what scan angle or force setpoint strategies can help?",
+        "Answer": "To enhance tracking at abrupt material transitions, reduce the scan angle to minimize lateral forces and optimize the force setpoint. A lower setpoint increases tip-sample interaction, improving tracking but potentially increasing wear or deformation. Iteratively adjust both parameters to find the optimal balance for your sample.",
+        "Recommendations": [
+            "Minimize scan angle",
+            "Optimize force setpoint"
+        ]
+    },
+    {
+        "idx": 45,
+        "Question": "What is the effect of scanner thermal drift on long, slow scans, and how can I compensate for it to maintain tracking?",
+        "Answer": "Scanner thermal drift causes a gradual shift in the scanner's position over time, especially noticeable in long, slow scans. This drift can distort the AFM image, making features appear elongated or skewed. It arises from temperature fluctuations affecting the scanner's components, leading to expansion or contraction.",
+        "Recommendations": [
+            "Minimize environmental temperature variations by using temperature controllers.",
+            "Reduce the duration of slow scans or divide large areas into smaller sections.",
+            "Use drift compensation techniques in the AFM software, such as image alignment or background subtraction."
+        ]
+    },
+    {
+        "idx": 46,
+        "Question": "I'm scanning live cells under a perfusion system-how do flow-induced vibrations impact tracking, and how can I stabilize the setup?",
+        "Answer": "Flow-induced vibrations introduce unwanted motion and noise, severely disrupting AFM's ability to maintain accurate tip-sample contact, leading to tracking errors and image artifacts.",
+        "Recommendations": [
+            "Minimize flow rate to the lowest rate that still maintains cell viability.",
+            "Use a closed perfusion system to reduce external vibrations.",
+            "Mechanically isolate the AFM setup from the perfusion system using vibration damping materials.",
+            "Employ real-time feedback mechanisms in the AFM controller to compensate for drift and vibrations."
+        ]
+    },
+    {
+        "idx": 47,
+        "Question": "When scanning soft-aligned nanofibers, I see tracking loss along the fiber axis-should I change scan direction or engage mode?",
+        "Answer": "The tracking loss along the fiber axis suggests the AFM tip is not maintaining consistent contact with the nanofiber surface. This can occur due to the tip being unable to follow the contours of the fiber or due to insufficient force.",
+        "Recommendations": [
+            "Try reducing the scan speed to allow the feedback loop more time to react to changes in the surface topography.",
+            "Adjust the setpoint to optimize the tip-sample interaction force. A lower setpoint (higher force) might improve tracking, but be cautious of damaging the sample."
+        ]
+    },
+    {
+        "idx": 48,
+        "Question": "My sample shows anisotropic stiffness-how can I adapt feedback gains to compensate for lateral compliance variation across the field?",
+        "Answer": "Adaptive feedback gains can compensate for lateral compliance variation by adjusting the feedback loop parameters in response to the changing sample stiffness. This ensures optimal tracking and minimizes artifacts caused by anisotropic stiffness.",
+        "Recommendations": [
+            "Use a force modulation technique to map the lateral stiffness variations across the field.",
+            "Implement a feedback controller that dynamically adjusts the gains based on the measured lateral stiffness.",
+            "Optimize the scan parameters, such as scan speed and setpoint, to minimize the impact of lateral compliance variations."
+        ]
+    },
+    {
+        "idx": 49,
+        "Question": "When scanning a sample with periodic nano-patterns, I notice inconsistent tracking across similar features. Could scanner resonance or feedback bandwidth be affecting performance, and how can I fine-tune the system to maintain consistent tracking?",
+        "Answer": "Inconsistent tracking in periodic nano-patterns can indeed arise from scanner resonance or insufficient feedback bandwidth, particularly if the scanning frequency approaches a resonant frequency of the scanner. This leads to overshooting or oscillations, causing the tip to lose contact or apply excessive force. Also, If the feedback bandwidth is too low, the system may not respond quickly enough to track the surface accurately, especially at higher scan speeds or with abrupt changes in topography.",
+        "Recommendations": [
+            "Reduce the scan speed to allow the feedback loop to keep up with the surface changes. This is especially important when imaging samples with sharp features or high aspect ratios.",
+            "Adjust the proportional, integral, and derivative (PID) gains in the feedback loop. Start by reducing the I gain, as it is often the source of oscillations. Then, adjust P and D gains to optimize the response without introducing overshoot or instability. A higher P gain increases responsiveness, while a higher D gain dampens oscillations.",
+            "Use a stiffer cantilever with a higher resonant frequency, as it will be less susceptible to vibrations and more responsive to surface changes. However, be aware that stiffer cantilevers require higher forces, which could potentially damage soft samples.",
+            "If possible, switch to a higher bandwidth AFM controller. These controllers are designed to provide faster and more accurate feedback, which can significantly improve tracking performance, especially at higher scan speeds.",
+            "Implement a lock-in amplifier to selectively detect the desired frequency component of the AFM signal. This can help to improve the signal-to-noise ratio and reduce the effects of unwanted vibrations or noise.",
+            "Check the AFM setup for mechanical vibrations or acoustic noise. These external factors can interfere with the AFM's performance and cause tracking errors. Use vibration isolation tables and acoustic enclosures to minimize these effects."
+        ]
+    }
+]
