@@ -3,7 +3,9 @@ import json
 
 # json_path = '../evaluations_by_AFM_experts/AFM-Image-Defect-Claude-Responses-Nabila.json'
 # json_path = '../evaluations_by_AFM_experts/AFM-Image-Defect-GPTs-Responses-Hasib.json'
-json_path = '../evaluations_by_AFM_experts/AFM-Image-Defect-GPTs-Responses-DrAnwesha.json'
+# json_path = '../evaluations_by_AFM_experts/AFM-Image-Defect-GPTs-Responses-DrAnwesha.json'
+json_path = '../evaluations_by_AFM_experts/AFM-Image-Defect-Claude-Responses-DrJuanRen.json'
+
 
 
 with open(json_path, 'r') as f:
@@ -19,6 +21,8 @@ for idx,eval in enumerate(evaluations):
     else: # last 50 responses are from reasoning model
         reasoning_scores.append(score)
 
+print(len(non_reasoning_scores))
+print(len(reasoning_scores))
 print(f'Average score for non-reasoning model: {sum(non_reasoning_scores) / len(non_reasoning_scores)}')
 print(f'Average score for reasoning model: {sum(reasoning_scores) / len(reasoning_scores)}')
 
@@ -42,8 +46,8 @@ with open('../benchmark_questions/AFM_LLM_Combined_50_Questions.json', 'r') as f
     questions = json.load(f)
 
 for i in count2_question_ids:
-      print('#'*25)
-      print(f'Question {i}: {questions[i]["question"]}')
-      print(f'Reasoning score: {reasoning_scores[i]}')
-      print(f'Non-reasoning score: {non_reasoning_scores[i]}')
-      
+    #   print('#'*25)
+    #   print(f'Question {i}: {questions[i]["question"]}')
+    #   print(f'Reasoning score: {reasoning_scores[i]}')
+    #   print(f'Non-reasoning score: {non_reasoning_scores[i]}')
+    print(i)
