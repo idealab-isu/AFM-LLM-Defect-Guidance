@@ -11,8 +11,8 @@ class VGG16Model(nn.Module):
        #self.vgg16 = models.vgg16(weights=VGG16_Weights.DEFAULT)
        # Manually load the weights
        self.vgg16 = models.vgg16()
-       state_dict = torch.load("/work/mech-ai/angona3/Trial/vgg16_weights.pth", map_location=torch.device("cpu"))
-       self.vgg16.load_state_dict(state_dict)
+    #    state_dict = torch.load("/work/mech-ai/angona3/Trial/vgg16_weights.pth", map_location=torch.device("cpu"))
+    #    self.vgg16.load_state_dict(state_dict)
        self.vgg16.classifier[6] = nn.Linear(4096, num_classes) ##In PyTorch CrossEntropyLoss Handles Softmax Internally
        ###Adding an explicit softmax layer would create numerical instability by double-applying softmax (once in your model, once in the loss), 
        # leading to incorrect gradient calculations during training.

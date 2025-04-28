@@ -9,4 +9,5 @@
 - [x] Generate answers using Gemini 2.0 Flash, Claude 3.7 sonnet and GPT-o3-mini models.
 - [x] Setup Label Studio for evaluation of the answers.
 - [x] Get evaluation scores from AFM experts for the answers.
-- [ ] Work on UI for AFM Conversational Chatbot.
+- [x] Work on UI for AFM Conversational Chatbot.
+- [ ] Work to make the UI better.
