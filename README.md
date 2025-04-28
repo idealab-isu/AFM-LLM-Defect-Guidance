@@ -2,6 +2,11 @@
 
 ## 📋 Overview
 
+<div align="center">
+
+[![Online Demo](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/jrrade/AFM-Defect-Detection-and-LLM-Guidance)
+
+</div>
 <img src="images/overview.png" alt="Overview" width="500"/>
 
 This project implements a Unified User Interface for AFM Defect Classification and LLM-based AFM Assistant.
