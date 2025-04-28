@@ -1,4 +1,4 @@
-# AI-AFM-Agent for Defect Detection in AFM Images and LLM-based AFM Assistant
+# AI-Enabled Defect Classification in AFM Images with Conversational LLM-Based User Guidance
 
 ## 📋 Overview
 
@@ -17,7 +17,7 @@ This project implements a Unified User Interface for AFM Defect Classification a
 
 - **LLM-based AFM Assistant**: Provides a multi-turn conversation interface for users to ask questions about AFM images and defects.
   - Supports OpenAI and Anthropic LLMs
-  - Allows users to ask follow-up questions and get recommendations for action
+  - Allows users to ask follow-up questions and get recommendations for corrective action
 
 ## 🚀 Getting Started
 

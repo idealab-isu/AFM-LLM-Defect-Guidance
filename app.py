@@ -173,9 +173,9 @@ if uploaded_file is not None:
                 # Define the system prompt and initial state for the graph
                 system_prompt_content = (
                     f"You are an expert in atomic force microscopy (AFM). "
-                    f"The user has uploaded an image classified as '{class_label}'. "
-                    "Your role is to help the user understand this classification, potential causes, "
-                    "and how to potentially avoid or address the issue represented by this classification. "
+                    f"The user has uploaded an image and it has '{class_label}' defect. "
+                    "Your role is to help the user understand this defect, potential causes, "
+                    "and how to potentially avoid or address the issue represented by this defect. "
                     "Provide concise, technically accurate, and helpful answers. Avoid speculation if unsure."
                 )
                 system_message = SystemMessage(content=system_prompt_content)
