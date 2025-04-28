@@ -6,9 +6,6 @@ import operator
 from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
 from langchain_anthropic import ChatAnthropic
-from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain_groq import ChatGroq
-
 from langchain.schema import BaseMessage, AIMessage
 from langgraph.graph import StateGraph, END
 from langgraph.checkpoint.memory import MemorySaver # Optional for checkpointing
@@ -32,11 +29,7 @@ class GraphState(TypedDict):
 
 def initialize_llm(provider: str, model_name: str, temperature: float, api_key: str):
     """Initializes the appropriate LangChain Chat Model."""
-    if provider == "Groq":
-        if not api_key:
-            raise ValueError("Groq API key is missing. Please set GROQ_API_KEY.")
-        return ChatGroq(api_key=api_key, model_name=model_name, temperature=temperature)
-    elif provider == "OpenAI":
+    if provider == "OpenAI":
         if not api_key:
             raise ValueError("OpenAI API key is missing. Please set OPENAI_API_KEY.")
         return ChatOpenAI(api_key=api_key, model_name=model_name, temperature=temperature)
@@ -44,9 +37,6 @@ def initialize_llm(provider: str, model_name: str, temperature: float, api_key: 
         if not api_key:
             raise ValueError("Anthropic API key is missing. Please set ANTHROPIC_API_KEY.")
         return ChatAnthropic(api_key=api_key, model_name=model_name, temperature=temperature)
-    elif provider == "Google":
-        if not api_key:
-            raise ValueError("Google API key is missing. Please set GOOGLE_API_KEY.")
     else:
         raise ValueError(f"Unsupported LLM provider: {provider}")
 

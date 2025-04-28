@@ -92,16 +92,11 @@ st.write("Upload an AFM image, get a classification, and chat with an AI assista
 st.sidebar.header("Settings")
 
 # Model Selection
-provider = st.sidebar.selectbox("LLM Provider", ["Groq", "OpenAI", "Anthropic"], key="provider_select")
+provider = st.sidebar.selectbox("LLM Provider", ["OpenAI", "Anthropic"], key="provider_select")
 
 api_key = None
 api_key_name = ""
-if provider == "Groq":
-    default_model = "llama3-8b-8192"
-    available_models = ["llama3-8b-8192", "llama3-70b-8192", "mixtral-8x7b-32768", "gemma-7b-it"]
-    api_key = os.getenv("GROQ_API_KEY")
-    api_key_name = "GROQ_API_KEY"
-elif provider == "OpenAI":
+if provider == "OpenAI":
     default_model = "gpt-4o"
     available_models = ["gpt-4o", "o3-mini"]
     api_key = os.getenv("OPENAI_API_KEY")

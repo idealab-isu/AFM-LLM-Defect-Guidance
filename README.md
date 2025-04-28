@@ -1,6 +1,57 @@
-# AI-AFM-Agent for Defect Detection in AFM Images
+# AI-AFM-Agent for Defect Detection in AFM Images and LLM-based AFM Assistant
+
+## 📋 Overview
 
 <img src="images/overview.png" alt="Overview" width="500"/>
+
+This project implements a Unified User Interface for AFM Defect Classification and LLM-based AFM Assistant.
+
+
+## 📝 Key Features
+
+- **Defect Classification**: Utilizes a fine-tuned VGG16 model to classify AFM images into one of four categories:
+  - `good_images`
+  - `Imaging Artifact`
+  - `Not Tracking`
+  - `Tip Contamination`
+
+- **LLM-based AFM Assistant**: Provides a multi-turn conversation interface for users to ask questions about AFM images and defects.
+  - Supports OpenAI and Anthropic LLMs
+  - Allows users to ask follow-up questions and get recommendations for action
+
+## 🚀 Getting Started
+
+### 📦 Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd <repository-name>
+```
+
+2. Create and activate a virtual environment (recommended):
+```bash
+python -m venv afm_llm
+source afm_llm/bin/activate  # On Unix/macOS
+# or
+.\afm_llm\Scripts\activate  # On Windows
+```
+
+3. Install required dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+4. Create a `.env` file in the project root and add your API keys:
+```bash
+OPENAI_API_KEY=<your_openai_api_key>
+ANTHROPIC_API_KEY=<your_anthropic_api_key>
+```
+
+### 🏃‍♂️ Run the Streamlit app:
+```bash
+streamlit run app.py
+```
 
 # TODO
 
