@@ -30,3 +30,12 @@ typing-extensions
 
 # Environment variables
 python-dotenv
+
+# for streamlit
+streamlit
+
+# for classification model
+torch
+torchvision
+numpy
+PIL
