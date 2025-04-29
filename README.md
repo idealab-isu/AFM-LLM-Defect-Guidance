@@ -1,4 +1,4 @@
-# AI-Enabled Defect Classification in AFM Images with Conversational LLM-Based User Guidance
+# Conversational LLM-Based Decision Support for Defect Classification in AFM Images
 
 ## 📋 Overview
 
