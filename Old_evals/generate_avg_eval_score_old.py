@@ -1,10 +1,10 @@
 import os
 import json
 
-# json_path = '../evaluations_by_AFM_experts/AFM-Image-Defect-Claude-Responses-Nabila.json'
-# json_path = '../evaluations_by_AFM_experts/AFM-Image-Defect-GPTs-Responses-Hasib.json'
-# json_path = '../evaluations_by_AFM_experts/AFM-Image-Defect-GPTs-Responses-DrAnwesha.json'
-json_path = '../evaluations_by_AFM_experts/AFM-Image-Defect-Claude-Responses-DrJuanRen.json'
+# json_path = '../evaluations_by_AFM_experts/AFM-Image-Defect-Claude-Responses-Expert-3.json'
+# json_path = '../evaluations_by_AFM_experts/AFM-Image-Defect-GPTs-Responses-Expert-4.json'
+# json_path = '../evaluations_by_AFM_experts/AFM-Image-Defect-GPTs-Responses-Expert-1.json'
+json_path = '../evaluations_by_AFM_experts/AFM-Image-Defect-Claude-Responses-Expert-2.json'
 
 
 
