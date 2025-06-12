@@ -1,0 +1,137 @@
+<View>
+  <Header value="Evaluation of different LLM model responses to questions related to AFM Image Defects"/>
+  <Header value="Question:"/>
+  <Text name="question" value="$Question"/>
+
+  <!-- ================= GPT-4o ================= -->
+  <Header value="Response from Model 1"/>
+  <Text name="gpt4o_answer" value="$gpt_4o_Answers"/>
+  <Text name="gpt4o_recommendation" value="$gpt_4o_Recommendations"/>
+
+  <Header value="Correctness: Is the information factually and logically correct? Negative score for even a slight incorrect or irrelevant response." size='5'/>
+  <Choices name="gpt4o_correctness" toName="gpt4o_answer" showInline="true" choice="single-radio">
+    <Choice value="-1"/><Choice value="1"/><Choice value="2"/><Choice value="3"/><Choice value="4"/><Choice value="5"/>
+  </Choices>
+
+  <Header value="Relevance: Is the response on-topic and directly addresses the question or prompt?" size='5'/>
+  <Choices name="gpt4o_relevance" toName="gpt4o_answer" showInline="true" choice="single-radio">
+    <Choice value="1"/><Choice value="2"/><Choice value="3"/><Choice value="4"/><Choice value="5"/>
+  </Choices>
+
+  <Header value="Completeness: Does it address all necessary aspects of the question?" size='5'/>
+  <Choices name="gpt4o_completeness" toName="gpt4o_answer" showInline="true" choice="single-radio">
+    <Choice value="1"/><Choice value="2"/><Choice value="3"/><Choice value="4"/><Choice value="5"/>
+  </Choices>
+
+  <Header value="Clarity: Is the response clearly written and easy to understand?" size='5'/>
+  <Choices name="gpt4o_clarity" toName="gpt4o_answer" showInline="true" choice="single-radio">
+    <Choice value="1"/><Choice value="2"/><Choice value="3"/><Choice value="4"/><Choice value="5"/>
+  </Choices>
+
+  <Header value="Overall Quality: Overall usefulness and quality of this response." size='5'/>
+  <Choices name="gpt4o_overall" toName="gpt4o_answer" showInline="true" choice="single-radio">
+    <Choice value="1"/><Choice value="2"/><Choice value="3"/><Choice value="4"/><Choice value="5"/>
+  </Choices>
+
+  <Header value="Comments: Optional feedback about missed or incorrect recommendations"/>
+  <TextArea name="gpt4o_comments" toName="gpt4o_answer" rows="4" placeholder="Write the feedback here"/>
+
+  <!-- ================= GPT-o3-mini ================= -->
+  <Header value="Response from Model 2"/>
+  <Text name="gpto3_answer" value="$gpt_o3_mini_Answers"/>
+  <Text name="gpto3_recommendation" value="$gpt_o3_mini_Recommendations"/>
+
+  <Header value="Correctness: Is the information factually and logically correct? Negative score for even a slight incorrect or irrelevant response." size='5'/>
+  <Choices name="gpto3_correctness" toName="gpto3_answer" showInline="true" choice="single-radio">
+    <Choice value="-1"/><Choice value="1"/><Choice value="2"/><Choice value="3"/><Choice value="4"/><Choice value="5"/>
+  </Choices>
+
+  <Header value="Relevance: Is the response on-topic and directly addresses the question or prompt?" size='5'/>
+  <Choices name="gpto3_relevance" toName="gpto3_answer" showInline="true" choice="single-radio">
+    <Choice value="1"/><Choice value="2"/><Choice value="3"/><Choice value="4"/><Choice value="5"/>
+  </Choices>
+
+  <Header value="Completeness: Does it address all necessary aspects of the question?" size='5'/>
+  <Choices name="gpto3_completeness" toName="gpto3_answer" showInline="true" choice="single-radio">
+    <Choice value="1"/><Choice value="2"/><Choice value="3"/><Choice value="4"/><Choice value="5"/>
+  </Choices>
+
+  <Header value="Clarity: Is the response clearly written and easy to understand?" size='5'/>
+  <Choices name="gpto3_clarity" toName="gpto3_answer" showInline="true" choice="single-radio">
+    <Choice value="1"/><Choice value="2"/><Choice value="3"/><Choice value="4"/><Choice value="5"/>
+  </Choices>
+
+  <Header value="Overall Quality: Overall usefulness and quality of this response." size='5'/>
+  <Choices name="gpto3_overall" toName="gpto3_answer" showInline="true" choice="single-radio">
+    <Choice value="1"/><Choice value="2"/><Choice value="3"/><Choice value="4"/><Choice value="5"/>
+  </Choices>
+
+  <Header value="Comments: Optional feedback about missed or incorrect recommendations" size='5'/>
+  <TextArea name="gpto3_comments" toName="gpto3_answer" rows="4" placeholder="Write the feedback here"/>
+
+  <!-- ================= Claude 3.5 Sonnet ================= -->
+  <Header value="Response from Model 3"/>
+  <Text name="claude35_answer" value="$claude_3_5_sonnet_Answers"/>
+  <Text name="claude35_recommendation" value="$claude_3_5_sonnet_Recommendations"/>
+
+  <Header value="Correctness: Is the information factually and logically correct? Negative score for even a slight incorrect or irrelevant response." size='5'/>
+  <Choices name="claude35_correctness" toName="claude35_answer" showInline="true" choice="single-radio">
+    <Choice value="-1"/><Choice value="1"/><Choice value="2"/><Choice value="3"/><Choice value="4"/><Choice value="5"/>
+  </Choices>
+
+  <Header value="Relevance: Is the response on-topic and directly addresses the question or prompt?" size='5'/>
+  <Choices name="claude35_relevance" toName="claude35_answer" showInline="true" choice="single-radio">
+    <Choice value="1"/><Choice value="2"/><Choice value="3"/><Choice value="4"/><Choice value="5"/>
+  </Choices>
+
+  <Header value="Completeness: Does it address all necessary aspects of the question?" size='5'/>
+  <Choices name="claude35_completeness" toName="claude35_answer" showInline="true" choice="single-radio">
+    <Choice value="1"/><Choice value="2"/><Choice value="3"/><Choice value="4"/><Choice value="5"/>
+  </Choices>
+
+  <Header value="Clarity: Is the response clearly written and easy to understand?" size='5'/>
+  <Choices name="claude35_clarity" toName="claude35_answer" showInline="true" choice="single-radio">
+    <Choice value="1"/><Choice value="2"/><Choice value="3"/><Choice value="4"/><Choice value="5"/>
+  </Choices>
+
+  <Header value="Overall Quality: Overall usefulness and quality of this response." size='5'/>
+  <Choices name="claude35_overall" toName="claude35_answer" showInline="true" choice="single-radio">
+    <Choice value="1"/><Choice value="2"/><Choice value="3"/><Choice value="4"/><Choice value="5"/>
+  </Choices>
+
+  <Header value="Comments: Optional feedback about missed or incorrect recommendations"/>
+  <TextArea name="claude35_comments" toName="claude35_answer" rows="4" placeholder="Write the feedback here"/>
+
+  <!-- ================= Claude 3.7 Sonnet ================= -->
+  <Header value="Response from Model 4"/>
+  <Text name="claude37_answer" value="$claude_3_7_sonnet_Answers"/>
+  <Text name="claude37_recommendation" value="$claude_3_7_sonnet_Recommendations"/>
+
+  <Header value="Correctness: Is the information factually and logically correct? Negative score for even a slight incorrect or irrelevant response." size='5'/>
+  <Choices name="claude37_correctness" toName="claude37_answer" showInline="true" choice="single-radio">
+    <Choice value="-1"/><Choice value="1"/><Choice value="2"/><Choice value="3"/><Choice value="4"/><Choice value="5"/>
+  </Choices>
+
+  <Header value="Relevance: Is the response on-topic and directly addresses the question or prompt?" size='5'/>
+  <Choices name="claude37_relevance" toName="claude37_answer" showInline="true" choice="single-radio">
+    <Choice value="1"/><Choice value="2"/><Choice value="3"/><Choice value="4"/><Choice value="5"/>
+  </Choices>
+
+  <Header value="Completeness: Does it address all necessary aspects of the question?" size='5'/>
+  <Choices name="claude37_completeness" toName="claude37_answer" showInline="true" choice="single-radio">
+    <Choice value="1"/><Choice value="2"/><Choice value="3"/><Choice value="4"/><Choice value="5"/>
+  </Choices>
+
+  <Header value="Clarity: Is the response clearly written and easy to understand?" size='5'/>
+  <Choices name="claude37_clarity" toName="claude37_answer" showInline="true" choice="single-radio">
+    <Choice value="1"/><Choice value="2"/><Choice value="3"/><Choice value="4"/><Choice value="5"/>
+  </Choices>
+
+  <Header value="Overall Quality: Overall usefulness and quality of this response." size='5'/>
+  <Choices name="claude37_overall" toName="claude37_answer" showInline="true" choice="single-radio">
+    <Choice value="1"/><Choice value="2"/><Choice value="3"/><Choice value="4"/><Choice value="5"/>
+  </Choices>
+
+  <Header value="Comments: Optional feedback about missed or incorrect recommendations"/>
+  <TextArea name="claude37_comments" toName="claude37_answer" rows="4" placeholder="Write the feedback here"/>
+</View>

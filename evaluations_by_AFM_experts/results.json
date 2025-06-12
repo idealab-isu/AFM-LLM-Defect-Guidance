@@ -3,14 +3,6 @@
         "question_id": 0,
         "question": "I'm imaging soft polymer films, and over time the contrast gets worse-how can I tell if the tip is contaminated, and what precautions can I take during scanning to prevent this?",
         "expert_id": 1,
-        "gpt4o": {
-            "relevance": 3,
-            "completeness": 3,
-            "correctness": 3,
-            "clarity": 5,
-            "overall": 3,
-            "comments": "Repeating shapes or irregular features in your images can indicate contamination.  Another indication of contamination is if everything suddenly appears larger within the same frame. If working with proteins, they can be sticky, so prevention is tricky.  There is not much that can be done to prevent this.\n\n "
-        },
         "claude35": {
             "relevance": 3,
             "completeness": 3,
@@ -18,6 +10,14 @@
             "clarity": 5,
             "overall": 4,
             "comments": "Another indication of contamination is if everything suddenly appears larger within the same frame. If working with proteins, they can be sticky, so prevention is tricky.  There is not much that can be done to prevent this."
+        },
+        "gpt4o": {
+            "relevance": 3,
+            "completeness": 3,
+            "correctness": 3,
+            "clarity": 5,
+            "overall": 3,
+            "comments": "Repeating shapes or irregular features in your images can indicate contamination.  Another indication of contamination is if everything suddenly appears larger within the same frame. If working with proteins, they can be sticky, so prevention is tricky.  There is not much that can be done to prevent this.\n\n "
         },
         "claude37": {
             "relevance": 3,
@@ -40,20 +40,20 @@
         "question_id": 1,
         "question": "After scanning biological samples in fluid, the tip seems degraded-how can I reduce the chance of biofouling or sample transfer to the tip?",
         "expert_id": 1,
-        "gpt4o": {
-            "relevance": 3,
-            "completeness": 2,
-            "correctness": -1,
-            "clarity": 4,
-            "overall": 1,
-            "comments": "No comments"
-        },
         "claude35": {
             "relevance": 3,
             "completeness": 3,
             "correctness": -1,
             "clarity": 4,
             "overall": 2,
+            "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 3,
+            "completeness": 2,
+            "correctness": -1,
+            "clarity": 4,
+            "overall": 1,
             "comments": "No comments"
         },
         "claude37": {
@@ -77,20 +77,20 @@
         "question_id": 2,
         "question": "What scanning parameters can I tune to reduce the risk of tip contamination when imaging adhesive surfaces like hydrogels or organic thin films?",
         "expert_id": 1,
-        "gpt4o": {
-            "relevance": 2,
-            "completeness": 3,
-            "correctness": -1,
-            "clarity": 3,
-            "overall": 2,
-            "comments": "No comments"
-        },
         "claude35": {
             "relevance": 3,
             "completeness": 3,
             "correctness": -1,
             "clarity": 3,
             "overall": 3,
+            "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 2,
+            "completeness": 3,
+            "correctness": -1,
+            "clarity": 3,
+            "overall": 2,
             "comments": "No comments"
         },
         "claude37": {
@@ -114,20 +114,20 @@
         "question_id": 3,
         "question": "How can I determine if a drop in resolution is due to tip wear vs tip contamination, and what are the cleaning or replacement protocols?",
         "expert_id": 1,
-        "gpt4o": {
-            "relevance": 5,
-            "completeness": 5,
-            "correctness": 5,
-            "clarity": 5,
-            "overall": 5,
-            "comments": "No comments"
-        },
         "claude35": {
             "relevance": 4,
             "completeness": 4,
             "correctness": 3,
             "clarity": 4,
             "overall": 4,
+            "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 5,
+            "completeness": 5,
+            "correctness": 5,
+            "clarity": 5,
+            "overall": 5,
             "comments": "No comments"
         },
         "claude37": {
@@ -151,20 +151,20 @@
         "question_id": 4,
         "question": "Can certain material types or surface treatments increase the likelihood of contaminating the tip? How can I prepare my sample differently to avoid that?",
         "expert_id": 1,
-        "gpt4o": {
-            "relevance": 2,
-            "completeness": 2,
-            "correctness": -1,
-            "clarity": 2,
-            "overall": 2,
-            "comments": "No comments"
-        },
         "claude35": {
             "relevance": 3,
             "completeness": 3,
             "correctness": 2,
             "clarity": 3,
             "overall": 3,
+            "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 2,
+            "completeness": 2,
+            "correctness": -1,
+            "clarity": 2,
+            "overall": 2,
             "comments": "No comments"
         },
         "claude37": {
@@ -188,20 +188,20 @@
         "question_id": 5,
         "question": "I'm working with live cell cultures, and the tip seems to get contaminated during extended imaging-how can I minimize biological debris sticking to the tip?",
         "expert_id": 1,
-        "gpt4o": {
-            "relevance": 3,
-            "completeness": 3,
-            "correctness": 2,
-            "clarity": 4,
-            "overall": 3,
-            "comments": "No comments"
-        },
         "claude35": {
             "relevance": 2,
             "completeness": 2,
             "correctness": -1,
             "clarity": 2,
             "overall": 2,
+            "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 3,
+            "completeness": 3,
+            "correctness": 2,
+            "clarity": 4,
+            "overall": 3,
             "comments": "No comments"
         },
         "claude37": {
@@ -222,22 +222,59 @@
         }
     },
     {
-        "question_id": 7,
-        "question": "How do I choose tip material and coating to reduce contamination when imaging sticky biomolecules like DNA or unfolded proteins?",
+        "question_id": 6,
+        "question": "After scanning hydrated tissue sections, I see ghost features and blurred edges-what kind of tip care or material compatibility checks should I perform to prevent this?",
         "expert_id": 1,
+        "claude35": {
+            "relevance": 3,
+            "completeness": 4,
+            "correctness": -1,
+            "clarity": 4,
+            "overall": 3,
+            "comments": "No comments"
+        },
         "gpt4o": {
             "relevance": 3,
+            "completeness": 2,
+            "correctness": 2,
+            "clarity": 4,
+            "overall": 3,
+            "comments": "No comments"
+        },
+        "claude37": {
+            "relevance": 3,
+            "completeness": 3,
+            "correctness": -1,
+            "clarity": 5,
+            "overall": 3,
+            "comments": "No comments"
+        },
+        "gpto3": {
+            "relevance": 4,
             "completeness": 3,
             "correctness": 3,
             "clarity": 4,
             "overall": 3,
             "comments": "No comments"
-        },
+        }
+    },
+    {
+        "question_id": 7,
+        "question": "How do I choose tip material and coating to reduce contamination when imaging sticky biomolecules like DNA or unfolded proteins?",
+        "expert_id": 1,
         "claude35": {
             "relevance": 3,
             "completeness": 3,
             "correctness": 2,
             "clarity": 3,
+            "overall": 3,
+            "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 3,
+            "completeness": 3,
+            "correctness": 3,
+            "clarity": 4,
             "overall": 3,
             "comments": "No comments"
         },
@@ -262,19 +299,19 @@
         "question_id": 8,
         "question": "I-m imaging fibrous extracellular matrix proteins, and resolution decreases with each scan-how can I prevent material buildup on the tip during repeated passes?",
         "expert_id": 1,
-        "gpt4o": {
-            "relevance": 3,
-            "completeness": 3,
-            "correctness": 3,
-            "clarity": 3,
-            "overall": 3,
-            "comments": "No comments"
-        },
         "claude35": {
             "relevance": 3,
             "completeness": 3,
             "correctness": -1,
             "clarity": 4,
+            "overall": 3,
+            "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 3,
+            "completeness": 3,
+            "correctness": 3,
+            "clarity": 3,
             "overall": 3,
             "comments": "No comments"
         },
@@ -299,20 +336,20 @@
         "question_id": 9,
         "question": "When imaging soft protein layers in fluid, I notice a rapid drop in resolution-could this be due to tip contamination, and how can I reduce fouling during long scans?",
         "expert_id": 1,
-        "gpt4o": {
-            "relevance": 2,
-            "completeness": 1,
-            "correctness": 1,
-            "clarity": 4,
-            "overall": 1,
-            "comments": "No comments"
-        },
         "claude35": {
             "relevance": 3,
             "completeness": 3,
             "correctness": -1,
             "clarity": 3,
             "overall": 3,
+            "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 2,
+            "completeness": 1,
+            "correctness": 1,
+            "clarity": 4,
+            "overall": 1,
             "comments": "No comments"
         },
         "claude37": {
@@ -336,20 +373,20 @@
         "question_id": 10,
         "question": "I'm imaging a lipid bilayer in fluid and notice fuzzy edges after a few scans-how can I reduce molecular transfer to the tip?",
         "expert_id": 2,
-        "gpt4o": {
-            "relevance": 5,
-            "completeness": 4,
-            "correctness": 5,
-            "clarity": 4,
-            "overall": 4,
-            "comments": "No comments"
-        },
         "claude35": {
             "relevance": 4,
             "completeness": 4,
             "correctness": 3,
             "clarity": 3,
             "overall": 2,
+            "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 5,
+            "completeness": 4,
+            "correctness": 5,
+            "clarity": 4,
+            "overall": 4,
             "comments": "No comments"
         },
         "claude37": {
@@ -373,20 +410,20 @@
         "question_id": 11,
         "question": "What role does relative humidity play in promoting tip contamination while scanning hygroscopic samples like polysaccharides?",
         "expert_id": 2,
-        "gpt4o": {
-            "relevance": 5,
-            "completeness": 5,
-            "correctness": 4,
-            "clarity": 5,
-            "overall": 4,
-            "comments": "No comments"
-        },
         "claude35": {
             "relevance": 5,
             "completeness": 5,
             "correctness": 5,
             "clarity": 5,
             "overall": 5,
+            "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 5,
+            "completeness": 5,
+            "correctness": 4,
+            "clarity": 5,
+            "overall": 4,
             "comments": "No comments"
         },
         "claude37": {
@@ -410,20 +447,20 @@
         "question_id": 12,
         "question": "I frequently switch between dry and fluid imaging sessions-how should I clean or condition the tip between sessions to prevent cross-contamination?",
         "expert_id": 2,
-        "gpt4o": {
-            "relevance": 4,
-            "completeness": 4,
-            "correctness": 5,
-            "clarity": 5,
-            "overall": 4,
-            "comments": "No comments"
-        },
         "claude35": {
             "relevance": 5,
             "completeness": 5,
             "correctness": 5,
             "clarity": 5,
             "overall": 5,
+            "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 4,
+            "completeness": 4,
+            "correctness": 5,
+            "clarity": 5,
+            "overall": 4,
             "comments": "No comments"
         },
         "claude37": {
@@ -447,19 +484,19 @@
         "question_id": 13,
         "question": "How can I detect early signs of organic contamination on the tip before they significantly affect resolution?",
         "expert_id": 2,
-        "gpt4o": {
-            "relevance": 5,
-            "completeness": 4,
-            "correctness": 5,
-            "clarity": 4,
-            "overall": 4,
-            "comments": "No comments"
-        },
         "claude35": {
             "relevance": 5,
             "completeness": 4,
             "correctness": 5,
             "clarity": 5,
+            "overall": 4,
+            "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 5,
+            "completeness": 4,
+            "correctness": 5,
+            "clarity": 4,
             "overall": 4,
             "comments": "No comments"
         },
@@ -484,20 +521,20 @@
         "question_id": 14,
         "question": "I'm working with hydrophobic surfaces-how does tip hydrophilicity impact contamination risk, and how should I choose the tip coating?",
         "expert_id": 2,
-        "gpt4o": {
-            "relevance": 4,
-            "completeness": 3,
-            "correctness": 5,
-            "clarity": 4,
-            "overall": 4,
-            "comments": "No comments"
-        },
         "claude35": {
             "relevance": 5,
             "completeness": 5,
             "correctness": 5,
             "clarity": 5,
             "overall": 5,
+            "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 4,
+            "completeness": 3,
+            "correctness": 5,
+            "clarity": 4,
+            "overall": 4,
             "comments": "No comments"
         },
         "claude37": {
@@ -521,20 +558,20 @@
         "question_id": 15,
         "question": "Are there best practices for storing AFM tips to reduce contamination risk before imaging sensitive protein samples?",
         "expert_id": 2,
-        "gpt4o": {
-            "relevance": 5,
-            "completeness": 4,
-            "correctness": 5,
-            "clarity": 5,
-            "overall": 4,
-            "comments": "No comments"
-        },
         "claude35": {
             "relevance": 5,
             "completeness": 5,
             "correctness": 5,
             "clarity": 5,
             "overall": 5,
+            "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 5,
+            "completeness": 4,
+            "correctness": 5,
+            "clarity": 5,
+            "overall": 4,
             "comments": "No comments"
         },
         "claude37": {
@@ -558,18 +595,18 @@
         "question_id": 16,
         "question": "Can using a closed fluid cell reduce contamination while imaging weakly bound soft matter in aqueous conditions?",
         "expert_id": 2,
-        "gpt4o": {
-            "relevance": 5,
-            "completeness": 4,
-            "correctness": 4,
-            "clarity": 5,
-            "overall": 4,
-            "comments": "No comments"
-        },
         "claude35": {
             "relevance": 5,
             "completeness": 4,
             "correctness": 5,
+            "clarity": 5,
+            "overall": 4,
+            "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 5,
+            "completeness": 4,
+            "correctness": 4,
             "clarity": 5,
             "overall": 4,
             "comments": "No comments"
@@ -595,20 +632,20 @@
         "question_id": 17,
         "question": "What are the recommended low-force settings to minimize tip embedding and contamination in soft hydrogel networks?",
         "expert_id": 2,
-        "gpt4o": {
-            "relevance": 4,
-            "completeness": 4,
-            "correctness": 3,
-            "clarity": 3,
-            "overall": 3,
-            "comments": "No comments"
-        },
         "claude35": {
             "relevance": 4,
             "completeness": 4,
             "correctness": 5,
             "clarity": 4,
             "overall": 4,
+            "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 4,
+            "completeness": 4,
+            "correctness": 3,
+            "clarity": 3,
+            "overall": 3,
             "comments": "No comments"
         },
         "claude37": {
@@ -632,20 +669,20 @@
         "question_id": 18,
         "question": "How do I distinguish between phase image artifacts from surface features and those due to tip contamination?",
         "expert_id": 2,
-        "gpt4o": {
-            "relevance": 4,
-            "completeness": 3,
-            "correctness": 3,
-            "clarity": 4,
-            "overall": 3,
-            "comments": "No comments"
-        },
         "claude35": {
             "relevance": 4,
             "completeness": 4,
             "correctness": 5,
             "clarity": 4,
             "overall": 4,
+            "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 4,
+            "completeness": 3,
+            "correctness": 3,
+            "clarity": 4,
+            "overall": 3,
             "comments": "No comments"
         },
         "claude37": {
@@ -669,18 +706,18 @@
         "question_id": 19,
         "question": "Is there a recommended plasma or UV-ozone cleaning protocol for restoring contaminated tips used in biological samples?",
         "expert_id": 2,
-        "gpt4o": {
-            "relevance": 4,
-            "completeness": 3,
-            "correctness": 4,
-            "clarity": 4,
-            "overall": 4,
-            "comments": "No comments"
-        },
         "claude35": {
             "relevance": 4,
             "completeness": 4,
             "correctness": 5,
+            "clarity": 4,
+            "overall": 4,
+            "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 4,
+            "completeness": 3,
+            "correctness": 4,
             "clarity": 4,
             "overall": 4,
             "comments": "No comments"
@@ -706,14 +743,6 @@
         "question_id": 20,
         "question": "When imaging samples functionalized with charged ligands, how does electrostatic interaction contribute to tip fouling, and how can I mitigate it?",
         "expert_id": 3,
-        "gpt4o": {
-            "relevance": 5,
-            "completeness": 3,
-            "correctness": 4,
-            "clarity": 5,
-            "overall": 4,
-            "comments": "Missing \"AFM mode and buffer concentration optimization\""
-        },
         "claude35": {
             "relevance": 5,
             "completeness": 5,
@@ -721,6 +750,14 @@
             "clarity": 5,
             "overall": 4,
             "comments": "\"2. Consider using tips with opposite charge to your sample to minimize adhesion\" may increase the attraction leading to more fouling"
+        },
+        "gpt4o": {
+            "relevance": 5,
+            "completeness": 3,
+            "correctness": 4,
+            "clarity": 5,
+            "overall": 4,
+            "comments": "Missing \"AFM mode and buffer concentration optimization\""
         },
         "claude37": {
             "relevance": 5,
@@ -743,14 +780,6 @@
         "question_id": 21,
         "question": "What rinsing steps should be followed when transferring protein-coated mica samples to the AFM to reduce tip fouling?",
         "expert_id": 3,
-        "gpt4o": {
-            "relevance": 5,
-            "completeness": 4,
-            "correctness": 5,
-            "clarity": 5,
-            "overall": 4,
-            "comments": "\"2. Use a pre-rinse with buffer solution to stabilize proteins on the mica before final rinsing with water.\" statement is a little bit confusing. "
-        },
         "claude35": {
             "relevance": 5,
             "completeness": 5,
@@ -758,6 +787,14 @@
             "clarity": 5,
             "overall": 5,
             "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 5,
+            "completeness": 4,
+            "correctness": 5,
+            "clarity": 5,
+            "overall": 4,
+            "comments": "\"2. Use a pre-rinse with buffer solution to stabilize proteins on the mica before final rinsing with water.\" statement is a little bit confusing. "
         },
         "claude37": {
             "relevance": 5,
@@ -777,17 +814,46 @@
         }
     },
     {
-        "question_id": 23,
-        "question": "I observe gradual contrast loss across sequential tiles in a stitched image-could progressive tip contamination be the cause, and how can I validate this?",
+        "question_id": 22,
+        "question": "For imaging high-resolution DNA origami structures, how often should I check for tip contamination and recalibrate?",
         "expert_id": 3,
+        "claude35": {
+            "relevance": 5,
+            "completeness": 4,
+            "correctness": 5,
+            "clarity": 5,
+            "overall": 4,
+            "comments": "No comments"
+        },
         "gpt4o": {
-            "relevance": 4,
+            "relevance": 5,
+            "completeness": 4,
+            "correctness": 4,
+            "clarity": 5,
+            "overall": 4,
+            "comments": "No comments"
+        },
+        "claude37": {
+            "relevance": 5,
+            "completeness": 4,
+            "correctness": 5,
+            "clarity": 5,
+            "overall": 4,
+            "comments": "No comments"
+        },
+        "gpto3": {
+            "relevance": 5,
             "completeness": 3,
             "correctness": 4,
             "clarity": 5,
             "overall": 3,
-            "comments": "experimental validation can be done by analyzing force vs disrance curves"
-        },
+            "comments": "No comments"
+        }
+    },
+    {
+        "question_id": 23,
+        "question": "I observe gradual contrast loss across sequential tiles in a stitched image-could progressive tip contamination be the cause, and how can I validate this?",
+        "expert_id": 3,
         "claude35": {
             "relevance": 5,
             "completeness": 5,
@@ -795,6 +861,14 @@
             "clarity": 5,
             "overall": 5,
             "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 4,
+            "completeness": 3,
+            "correctness": 4,
+            "clarity": 5,
+            "overall": 3,
+            "comments": "experimental validation can be done by analyzing force vs disrance curves"
         },
         "claude37": {
             "relevance": 5,
@@ -817,20 +891,20 @@
         "question_id": 24,
         "question": "What's the safest way to clean a tip in-situ during a long imaging session without fully retracting it or disturbing the fluid environment?",
         "expert_id": 3,
-        "gpt4o": {
-            "relevance": 5,
-            "completeness": 3,
-            "correctness": 5,
-            "clarity": 5,
-            "overall": 3,
-            "comments": "No comments"
-        },
         "claude35": {
             "relevance": 5,
             "completeness": 5,
             "correctness": 5,
             "clarity": 5,
             "overall": 5,
+            "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 5,
+            "completeness": 3,
+            "correctness": 5,
+            "clarity": 5,
+            "overall": 3,
             "comments": "No comments"
         },
         "claude37": {
@@ -854,20 +928,20 @@
         "question_id": 25,
         "question": "I'm imaging a hard metallic surface and I notice the tip is skipping over topography-what feedback loop settings or scan parameters should I modify?",
         "expert_id": 3,
-        "gpt4o": {
-            "relevance": 5,
-            "completeness": 4,
-            "correctness": 5,
-            "clarity": 5,
-            "overall": 4,
-            "comments": "No comments"
-        },
         "claude35": {
             "relevance": 5,
             "completeness": 5,
             "correctness": 5,
             "clarity": 5,
             "overall": 5,
+            "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 5,
+            "completeness": 4,
+            "correctness": 5,
+            "clarity": 5,
+            "overall": 4,
             "comments": "No comments"
         },
         "claude37": {
@@ -891,14 +965,6 @@
         "question_id": 26,
         "question": "Why does my AFM lose contact with the sample while scanning a soft material in tapping mode, and how can I maintain good tracking without damaging the surface?",
         "expert_id": 3,
-        "gpt4o": {
-            "relevance": 5,
-            "completeness": 4,
-            "correctness": -1,
-            "clarity": 5,
-            "overall": 2,
-            "comments": "\"2. Optimize the setpoint closer to the free amplitude, maintaining gentle tapping to avoid surface damage.\" can increase not tracking issues"
-        },
         "claude35": {
             "relevance": 5,
             "completeness": 5,
@@ -906,6 +972,14 @@
             "clarity": 5,
             "overall": 5,
             "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 5,
+            "completeness": 4,
+            "correctness": -1,
+            "clarity": 5,
+            "overall": 2,
+            "comments": "\"2. Optimize the setpoint closer to the free amplitude, maintaining gentle tapping to avoid surface damage.\" can increase not tracking issues"
         },
         "claude37": {
             "relevance": 5,
@@ -925,9 +999,17 @@
         }
     },
     {
-        "question_id": 28,
-        "question": "How does the scan speed or line rate affect the ability of the tip to track rough features, and what's the best strategy for balancing speed and stability?",
+        "question_id": 27,
+        "question": "I see flat lines in my topography image that suggest tracking failure-what environmental or scanner factors could be contributing to this, and how do I address them?",
         "expert_id": 3,
+        "claude35": {
+            "relevance": 5,
+            "completeness": 5,
+            "correctness": 5,
+            "clarity": 5,
+            "overall": 5,
+            "comments": "No comments"
+        },
         "gpt4o": {
             "relevance": 5,
             "completeness": 4,
@@ -936,7 +1018,36 @@
             "overall": 4,
             "comments": "No comments"
         },
+        "claude37": {
+            "relevance": 5,
+            "completeness": 5,
+            "correctness": 5,
+            "clarity": 5,
+            "overall": 5,
+            "comments": "No comments"
+        },
+        "gpto3": {
+            "relevance": 5,
+            "completeness": 4,
+            "correctness": 5,
+            "clarity": 5,
+            "overall": 4,
+            "comments": "No comments"
+        }
+    },
+    {
+        "question_id": 28,
+        "question": "How does the scan speed or line rate affect the ability of the tip to track rough features, and what's the best strategy for balancing speed and stability?",
+        "expert_id": 3,
         "claude35": {
+            "relevance": 5,
+            "completeness": 4,
+            "correctness": 5,
+            "clarity": 5,
+            "overall": 4,
+            "comments": "No comments"
+        },
+        "gpt4o": {
             "relevance": 5,
             "completeness": 4,
             "correctness": 5,
@@ -962,20 +1073,57 @@
         }
     },
     {
-        "question_id": 30,
-        "question": "While imaging soft live cells in tapping mode, I see sudden height drops and tracking loss-how can I tune feedback parameters to avoid indentation or disengagement?",
+        "question_id": 29,
+        "question": "When I zoom into nanostructures on my sample, the AFM fails to follow sharp edges-what tip and mode settings improve tracking on high-aspect-ratio features?",
         "expert_id": 3,
+        "claude35": {
+            "relevance": 5,
+            "completeness": 5,
+            "correctness": 5,
+            "clarity": 4,
+            "overall": 5,
+            "comments": "No comments"
+        },
         "gpt4o": {
             "relevance": 5,
             "completeness": 4,
+            "correctness": -1,
+            "clarity": 5,
+            "overall": 4,
+            "comments": "\"2.Increase the scanning rate ..............\" can produce nor tracking lines"
+        },
+        "claude37": {
+            "relevance": 5,
+            "completeness": 5,
+            "correctness": 5,
+            "clarity": 4,
+            "overall": 5,
+            "comments": "No comments"
+        },
+        "gpto3": {
+            "relevance": 5,
+            "completeness": 4,
+            "correctness": 5,
+            "clarity": 5,
+            "overall": 4,
+            "comments": "No comments"
+        }
+    },
+    {
+        "question_id": 30,
+        "question": "While imaging soft live cells in tapping mode, I see sudden height drops and tracking loss-how can I tune feedback parameters to avoid indentation or disengagement?",
+        "expert_id": 3,
+        "claude35": {
+            "relevance": 5,
+            "completeness": 5,
             "correctness": 4,
             "clarity": 5,
             "overall": 4,
             "comments": "No comments"
         },
-        "claude35": {
+        "gpt4o": {
             "relevance": 5,
-            "completeness": 5,
+            "completeness": 4,
             "correctness": 4,
             "clarity": 5,
             "overall": 4,
@@ -1002,7 +1150,7 @@
         "question_id": 31,
         "question": "I observe periodic loss of tracking on collagen-coated tissue samples-could this be due to topographical steepness, and how should I adjust my scan parameters?",
         "expert_id": 3,
-        "gpt4o": {
+        "claude35": {
             "relevance": 5,
             "completeness": 5,
             "correctness": 5,
@@ -1010,7 +1158,7 @@
             "overall": 5,
             "comments": "No comments"
         },
-        "claude35": {
+        "gpt4o": {
             "relevance": 5,
             "completeness": 5,
             "correctness": 5,
@@ -1039,7 +1187,7 @@
         "question_id": 32,
         "question": "When zooming into nanometer-scale protein aggregates, my AFM fails to follow sharp topography-what tip specs and scanning parameters can ensure accurate tracking?",
         "expert_id": 3,
-        "gpt4o": {
+        "claude35": {
             "relevance": 5,
             "completeness": 5,
             "correctness": 5,
@@ -1047,7 +1195,7 @@
             "overall": 5,
             "comments": "No comments"
         },
-        "claude35": {
+        "gpt4o": {
             "relevance": 5,
             "completeness": 5,
             "correctness": 5,
@@ -1076,20 +1224,20 @@
         "question_id": 33,
         "question": "I-m imaging hydrated cells on soft substrates, and feedback seems unstable-how does substrate compliance affect tracking, and what imaging mode would be more stable?",
         "expert_id": 3,
-        "gpt4o": {
-            "relevance": 5,
-            "completeness": 4,
-            "correctness": 5,
-            "clarity": 5,
-            "overall": 4,
-            "comments": "No comments"
-        },
         "claude35": {
             "relevance": 5,
             "completeness": 5,
             "correctness": 5,
             "clarity": 5,
             "overall": 5,
+            "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 5,
+            "completeness": 4,
+            "correctness": 5,
+            "clarity": 5,
+            "overall": 4,
             "comments": "No comments"
         },
         "claude37": {
@@ -1110,17 +1258,46 @@
         }
     },
     {
+        "question_id": 34,
+        "question": "During imaging of biofilms, the feedback loop can-t keep up with surface changes-how can I improve the tracking without increasing damage to the biological sample?",
+        "expert_id": 3,
+        "claude35": {
+            "relevance": 5,
+            "completeness": 5,
+            "correctness": 5,
+            "clarity": 4,
+            "overall": 4,
+            "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 5,
+            "completeness": 5,
+            "correctness": 5,
+            "clarity": 5,
+            "overall": 5,
+            "comments": "No comments"
+        },
+        "claude37": {
+            "relevance": 4,
+            "completeness": 5,
+            "correctness": -1,
+            "clarity": 5,
+            "overall": 4,
+            "comments": "No comments"
+        },
+        "gpto3": {
+            "relevance": 5,
+            "completeness": 3,
+            "correctness": 4,
+            "clarity": 4,
+            "overall": 4,
+            "comments": "No comments"
+        }
+    },
+    {
         "question_id": 35,
         "question": "While scanning porous scaffolds, the feedback loop fails near void edges-how can I improve tracking over these abrupt depth changes?",
         "expert_id": 4,
-        "gpt4o": {
-            "relevance": 5,
-            "completeness": 4,
-            "correctness": 4,
-            "clarity": 5,
-            "overall": 5,
-            "comments": "Also, the amplitude setpoint can be reduced or increased based on situation."
-        },
         "claude35": {
             "relevance": 5,
             "completeness": 4,
@@ -1128,6 +1305,14 @@
             "clarity": 4,
             "overall": 3,
             "comments": "Along with aspect ratio, need lower spring constant K. Specially for soft sample."
+        },
+        "gpt4o": {
+            "relevance": 5,
+            "completeness": 4,
+            "correctness": 4,
+            "clarity": 5,
+            "overall": 5,
+            "comments": "Also, the amplitude setpoint can be reduced or increased based on situation."
         },
         "claude37": {
             "relevance": 4,
@@ -1150,14 +1335,6 @@
         "question_id": 36,
         "question": "On rough mineral surfaces, I experience repeated line skip artifacts-how should I adjust Z-piezo gain and PID parameters?",
         "expert_id": 4,
-        "gpt4o": {
-            "relevance": 5,
-            "completeness": 5,
-            "correctness": 5,
-            "clarity": 5,
-            "overall": 5,
-            "comments": "No comments"
-        },
         "claude35": {
             "relevance": 5,
             "completeness": 4,
@@ -1165,6 +1342,14 @@
             "clarity": 5,
             "overall": 5,
             "comments": "Use stiffer tip as scanning rough mineral surface."
+        },
+        "gpt4o": {
+            "relevance": 5,
+            "completeness": 5,
+            "correctness": 5,
+            "clarity": 5,
+            "overall": 5,
+            "comments": "No comments"
         },
         "claude37": {
             "relevance": 5,
@@ -1187,14 +1372,6 @@
         "question_id": 37,
         "question": "How can cantilever spring constant affect tracking stability when imaging stiff samples in intermittent contact mode?",
         "expert_id": 4,
-        "gpt4o": {
-            "relevance": 5,
-            "completeness": 4,
-            "correctness": 1,
-            "clarity": 4,
-            "overall": 2,
-            "comments": "Doesn't suggest any K value range for stiff samples."
-        },
         "claude35": {
             "relevance": 5,
             "completeness": 5,
@@ -1202,6 +1379,14 @@
             "clarity": 4,
             "overall": 3,
             "comments": "The range 20-50 N/m is slightly incorrect. It should be from 1-50 N/m or something."
+        },
+        "gpt4o": {
+            "relevance": 5,
+            "completeness": 4,
+            "correctness": 1,
+            "clarity": 4,
+            "overall": 2,
+            "comments": "Doesn't suggest any K value range for stiff samples."
         },
         "claude37": {
             "relevance": 5,
@@ -1224,14 +1409,6 @@
         "question_id": 38,
         "question": "What imaging mode is best suited for tracking sharp nanoparticle clusters on a soft biological matrix?",
         "expert_id": 4,
-        "gpt4o": {
-            "relevance": 3,
-            "completeness": 3,
-            "correctness": 5,
-            "clarity": 4,
-            "overall": 4,
-            "comments": "Doesn't mentioned the spring constant range."
-        },
         "claude35": {
             "relevance": 4,
             "completeness": 4,
@@ -1239,6 +1416,14 @@
             "clarity": 3,
             "overall": 3,
             "comments": "Soft cantilever is considered below k=1 N/m"
+        },
+        "gpt4o": {
+            "relevance": 3,
+            "completeness": 3,
+            "correctness": 5,
+            "clarity": 4,
+            "overall": 4,
+            "comments": "Doesn't mentioned the spring constant range."
         },
         "claude37": {
             "relevance": 4,
@@ -1261,20 +1446,20 @@
         "question_id": 39,
         "question": "What are signs of scanner creep leading to tracking issues during long-term imaging of patterned substrates?",
         "expert_id": 4,
-        "gpt4o": {
-            "relevance": 4,
-            "completeness": 4,
-            "correctness": 4,
-            "clarity": 3,
-            "overall": 3,
-            "comments": "No comments"
-        },
         "claude35": {
             "relevance": 4,
             "completeness": 4,
             "correctness": 5,
             "clarity": 4,
             "overall": 4,
+            "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 4,
+            "completeness": 4,
+            "correctness": 4,
+            "clarity": 3,
+            "overall": 3,
             "comments": "No comments"
         },
         "claude37": {
@@ -1298,18 +1483,18 @@
         "question_id": 40,
         "question": "I notice tracking failure only during upward topography changes-what scan direction or phase settings should I revise?",
         "expert_id": 4,
-        "gpt4o": {
-            "relevance": 4,
-            "completeness": 4,
-            "correctness": 3,
-            "clarity": 4,
-            "overall": 4,
-            "comments": "No comments"
-        },
         "claude35": {
             "relevance": 4,
             "completeness": 4,
             "correctness": 4,
+            "clarity": 4,
+            "overall": 4,
+            "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 4,
+            "completeness": 4,
+            "correctness": 3,
             "clarity": 4,
             "overall": 4,
             "comments": "No comments"
@@ -1335,7 +1520,7 @@
         "question_id": 41,
         "question": "What precautions should I take when switching from low-viscosity to high-viscosity fluid imaging environments to prevent tracking instability?",
         "expert_id": 4,
-        "gpt4o": {
+        "claude35": {
             "relevance": 3,
             "completeness": 3,
             "correctness": 3,
@@ -1343,7 +1528,7 @@
             "overall": 3,
             "comments": "No comments"
         },
-        "claude35": {
+        "gpt4o": {
             "relevance": 3,
             "completeness": 3,
             "correctness": 3,
@@ -1372,17 +1557,17 @@
         "question_id": 42,
         "question": "During high-magnification scans of fibrillar proteins, feedback becomes noisy-how can I enhance tip-sample coupling without increasing normal force?",
         "expert_id": 4,
-        "gpt4o": {
+        "claude35": {
             "relevance": 4,
-            "completeness": 3,
+            "completeness": 4,
             "correctness": 4,
             "clarity": 4,
             "overall": 4,
             "comments": "No comments"
         },
-        "claude35": {
+        "gpt4o": {
             "relevance": 4,
-            "completeness": 4,
+            "completeness": 3,
             "correctness": 4,
             "clarity": 4,
             "overall": 4,
@@ -1409,20 +1594,20 @@
         "question_id": 43,
         "question": "My sample is mounted at a slight tilt-how can uneven loading lead to lateral tip displacement and tracking defects?",
         "expert_id": 4,
-        "gpt4o": {
-            "relevance": 4,
-            "completeness": 3,
-            "correctness": 5,
-            "clarity": 4,
-            "overall": 3,
-            "comments": "No comments"
-        },
         "claude35": {
             "relevance": 4,
             "completeness": 4,
             "correctness": 4,
             "clarity": 5,
             "overall": 4,
+            "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 4,
+            "completeness": 3,
+            "correctness": 5,
+            "clarity": 4,
+            "overall": 3,
             "comments": "No comments"
         },
         "claude37": {
@@ -1446,14 +1631,6 @@
         "question_id": 44,
         "question": "When imaging a cross-section of a multilayer film, the AFM fails to track abrupt material transitions-what scan angle or force setpoint strategies can help?",
         "expert_id": 4,
-        "gpt4o": {
-            "relevance": 3,
-            "completeness": 3,
-            "correctness": 3,
-            "clarity": 3,
-            "overall": 2,
-            "comments": "Doesn't specify any standard value."
-        },
         "claude35": {
             "relevance": 5,
             "completeness": 4,
@@ -1461,6 +1638,14 @@
             "clarity": 4,
             "overall": 4,
             "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 3,
+            "completeness": 3,
+            "correctness": 3,
+            "clarity": 3,
+            "overall": 2,
+            "comments": "Doesn't specify any standard value."
         },
         "claude37": {
             "relevance": 4,
@@ -1483,18 +1668,18 @@
         "question_id": 45,
         "question": "What is the effect of scanner thermal drift on long, slow scans, and how can I compensate for it to maintain tracking?",
         "expert_id": 4,
-        "gpt4o": {
-            "relevance": 4,
-            "completeness": 4,
-            "correctness": 3,
-            "clarity": 4,
-            "overall": 4,
-            "comments": "No comments"
-        },
         "claude35": {
             "relevance": 4,
             "completeness": 4,
             "correctness": 4,
+            "clarity": 4,
+            "overall": 4,
+            "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 4,
+            "completeness": 4,
+            "correctness": 3,
             "clarity": 4,
             "overall": 4,
             "comments": "No comments"
@@ -1520,20 +1705,20 @@
         "question_id": 46,
         "question": "I'm scanning live cells under a perfusion system-how do flow-induced vibrations impact tracking, and how can I stabilize the setup?",
         "expert_id": 4,
-        "gpt4o": {
-            "relevance": 3,
-            "completeness": 3,
-            "correctness": 3,
-            "clarity": 4,
-            "overall": 2,
-            "comments": "No comments"
-        },
         "claude35": {
             "relevance": 4,
             "completeness": 4,
             "correctness": 4,
             "clarity": 4,
             "overall": 4,
+            "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 3,
+            "completeness": 3,
+            "correctness": 3,
+            "clarity": 4,
+            "overall": 2,
             "comments": "No comments"
         },
         "claude37": {
@@ -1557,20 +1742,20 @@
         "question_id": 47,
         "question": "When scanning soft-aligned nanofibers, I see tracking loss along the fiber axis-should I change scan direction or engage mode?",
         "expert_id": 4,
-        "gpt4o": {
-            "relevance": 5,
-            "completeness": 5,
-            "correctness": 5,
-            "clarity": 5,
-            "overall": 5,
-            "comments": "No comments"
-        },
         "claude35": {
             "relevance": 4,
             "completeness": 3,
             "correctness": 2,
             "clarity": 4,
             "overall": 3,
+            "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 5,
+            "completeness": 5,
+            "correctness": 5,
+            "clarity": 5,
+            "overall": 5,
             "comments": "No comments"
         },
         "claude37": {
@@ -1594,20 +1779,20 @@
         "question_id": 48,
         "question": "My sample shows anisotropic stiffness-how can I adapt feedback gains to compensate for lateral compliance variation across the field?",
         "expert_id": 4,
-        "gpt4o": {
-            "relevance": 4,
-            "completeness": 4,
-            "correctness": 4,
-            "clarity": 4,
-            "overall": 4,
-            "comments": "No comments"
-        },
         "claude35": {
             "relevance": 5,
             "completeness": 5,
             "correctness": 4,
             "clarity": 5,
             "overall": 5,
+            "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 4,
+            "completeness": 4,
+            "correctness": 4,
+            "clarity": 4,
+            "overall": 4,
             "comments": "No comments"
         },
         "claude37": {
@@ -1631,20 +1816,20 @@
         "question_id": 49,
         "question": "When scanning a sample with periodic nano-patterns, I notice inconsistent tracking across similar features. Could scanner resonance or feedback bandwidth be affecting performance, and how can I fine-tune the system to maintain consistent tracking?",
         "expert_id": 4,
-        "gpt4o": {
-            "relevance": 4,
-            "completeness": 4,
-            "correctness": 4,
-            "clarity": 4,
-            "overall": 4,
-            "comments": "No comments"
-        },
         "claude35": {
             "relevance": 5,
             "completeness": 5,
             "correctness": 5,
             "clarity": 5,
             "overall": 5,
+            "comments": "No comments"
+        },
+        "gpt4o": {
+            "relevance": 4,
+            "completeness": 4,
+            "correctness": 4,
+            "clarity": 4,
+            "overall": 4,
             "comments": "No comments"
         },
         "claude37": {

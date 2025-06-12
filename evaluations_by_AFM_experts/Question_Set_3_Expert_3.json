@@ -110,11 +110,12 @@
     "gpt4o_completeness": "4",
     "gpt4o_clarity": "5",
     "gpt4o_overall": "4",
+    "gpto3_clarity": "5",
     "annotator": 6,
     "annotation_id": 507,
     "created_at": "2025-05-28T17:02:02.531832Z",
-    "updated_at": "2025-05-28T17:02:02.531849Z",
-    "lead_time": 2536.769
+    "updated_at": "2025-06-01T20:56:48.033563Z",
+    "lead_time": 2577.6699999999996
   },
   {
     "idx": 23,
@@ -303,11 +304,12 @@
     "claude37_completeness": "5",
     "claude37_clarity": "5",
     "claude37_overall": "5",
+    "gpto3_relevance": "5",
     "annotator": 6,
     "annotation_id": 512,
     "created_at": "2025-05-28T21:08:08.783301Z",
-    "updated_at": "2025-05-28T21:08:08.783319Z",
-    "lead_time": 1771.686
+    "updated_at": "2025-06-01T20:57:43.448998Z",
+    "lead_time": 1810.9569999999999
   },
   {
     "idx": 28,
@@ -379,11 +381,12 @@
     "claude37_clarity": "4",
     "claude37_completeness": "5",
     "claude37_overall": "5",
+    "claude35_completeness": "5",
     "annotator": 6,
     "annotation_id": 514,
     "created_at": "2025-05-28T21:21:28.075678Z",
-    "updated_at": "2025-05-28T21:21:28.075695Z",
-    "lead_time": 389.174
+    "updated_at": "2025-06-01T20:59:09.165559Z",
+    "lead_time": 462.006
   },
   {
     "idx": 30,
@@ -568,10 +571,11 @@
     "claude37_completeness": "5",
     "claude37_clarity": "5",
     "claude37_overall": "4",
+    "claude35_overall": "4",
     "annotator": 6,
     "annotation_id": 519,
     "created_at": "2025-05-28T22:17:44.410825Z",
-    "updated_at": "2025-05-28T22:17:44.410842Z",
-    "lead_time": 180.631
+    "updated_at": "2025-06-01T20:59:25.665086Z",
+    "lead_time": 191.615
   }
 ]
