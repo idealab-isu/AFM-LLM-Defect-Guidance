@@ -154,6 +154,10 @@ if uploaded_file is not None:
             class_label = predict_image_class(img, model, class_names)
         st.success(f"**Predicted Class Label:** {class_label}")
 
+        if class_label == "Imaging Artifact":
+            st.error("Image likely contains multiple defects and requires further investigation by an AFM expert.")
+            st.stop()
+        
         # --- LLM and Graph Initialization ---
         label_changed = ("current_label" not in st.session_state or
                          st.session_state.current_label != class_label)
