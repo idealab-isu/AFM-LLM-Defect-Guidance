@@ -1,0 +1,1 @@
+Total time taken for 10 questions: 106.16862344741821 seconds

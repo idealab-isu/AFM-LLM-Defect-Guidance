@@ -96,38 +96,33 @@ def main(model_name):
     # Placeholder for responses
     results = []
 
-    with open(f"./llm_responses/running_responses_from_{model_name}.json", 'a') as f:
+    # Loop through each question and get responses from each model
+    for idx, q in enumerate(questions):
+        # format_instructions = parser.get_format_instructions()
+        # prompt = f"""
+        # {format_instructions}
+        # Question: {q}
+        # """
+        prompt = q
+        user_msg = HumanMessage(content=prompt)
+        messages = [system_prompt, user_msg]
 
-        # Loop through each question and get responses from each model
-        for idx, q in enumerate(questions[39:]):
-            # format_instructions = parser.get_format_instructions()
-            # prompt = f"""
-            # {format_instructions}
-            # Question: {q}
-            # """
-            prompt = q
-            user_msg = HumanMessage(content=prompt)
-            messages = [system_prompt, user_msg]
-
-            # Get responses
-            print(f"\n🧪 Question {idx+1}: {q}\n{'='*80}")
-            model_with_structured_output = model.with_structured_output(AFMResponse)
-            model_resp = model_with_structured_output.invoke(messages)
-            # model_resp = model.invoke(messages).content
-            # model_resp = parser.parse(model_resp)
-            print(f"\n[{model_name}]:\n{model_resp}")
-            # Save to list
-            result = {
-                "idx": idx,
-                "Question": q,
-                # "Model": model_name,
-                "Answer": model_resp.answer,
-                "Recommendations": model_resp.recommendations
-            }
-            results.append(result)
-            json.dump(result, f, indent=4)
-            f.write(",")
-            f.write("\n")
+        # Get responses
+        print(f"\n🧪 Question {idx+1}: {q}\n{'='*80}")
+        model_with_structured_output = model.with_structured_output(AFMResponse)
+        model_resp = model_with_structured_output.invoke(messages)
+        # model_resp = model.invoke(messages).content
+        # model_resp = parser.parse(model_resp)
+        print(f"\n[{model_name}]:\n{model_resp}")
+        # Save to list
+        result = {
+            "idx": idx,
+            "Question": q,
+            # "Model": model_name,
+            "Answer": model_resp.answer,
+            "Recommendations": model_resp.recommendations
+        }
+        results.append(result)
         
     # Export to JSON instead of CSV
     with open(f"./llm_responses/responses_from_{model_name}.json", 'w') as f:
@@ -138,5 +133,11 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='AFM Model Comparison')
     parser.add_argument('--model', type=str, default='gpt4o', choices=['gpt4o', 'gpt-o3-mini', 'claude3-5-sonnet', 'claude3-7-sonnet', 'gemini', 'groq'], help='Model to use')
     args = parser.parse_args()
-
+    import time
+    start_time = time.time()
     main(args.model)
+    end_time = time.time()
+    print(f"Time taken: {end_time - start_time} seconds")
+    # write the time taken to a file
+    with open(f"./llm_responses/time_taken_{args.model}.txt", 'w') as f:
+        f.write(f"Total time taken for 10 questions: {end_time - start_time} seconds")
